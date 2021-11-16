@@ -9,14 +9,14 @@ $sequence $SeqName$ $IdleAnim$ { \\
 	numframes $FrameNum$ \\
 	cmdlist lockfeet \\
 } \\
-$continue $SeqName$
+$continue $SeqName$	
 
 $definemacro MakeBlindfireActionAnim SeqName AnimName \\
 $sequence $SeqName$ $AnimName$ { \\
 	loop \\
 	cmdlist lockfeet \\
 } \\
-$continue $SeqName$
+$continue $SeqName$	
 
 $definemacro MakeBlindfireExitAnim SeqName TargetAnim IdleAnim Start Peak Tail FrameNum \\
 $sequence $SeqName$_layer $TargetAnim$ hidden \\
@@ -25,7 +25,7 @@ $sequence $SeqName$ $IdleAnim$ { \\
 	numframes $FrameNum$ \\
 	cmdlist lockfeet \\
 } \\
-$continue $SeqName$
+$continue $SeqName$	
 
 $MakeBlindfireEntryAnim "blindfire_left_entry" "AlyxBlindfireAnims/blindfire_left_entry.smd" $Blend_SMD_Default$ 0 12 30
 

@@ -17,7 +17,7 @@ $sequence $gesturename$ { \\
 	blendlayer $gesturename$spine 0 $InFrame$ $outFrame$ $LastFrame$ spline \\
 	iklock rfoot 1 0 iklock lfoot 1 0 \\
 } \\
-$continue $gesturename$
+$continue $gesturename$	
 
 
 $definemacro makeweapongesturep gesturename filename InFrame OutFrame LastFrame \\
@@ -29,7 +29,7 @@ $sequence $gesturename$ { \\
 	blendlayer $gesturename$spine 0 $InFrame$ $outFrame$ $LastFrame$ spline \\
 	iklock rfoot 1 0 iklock lfoot 1 0 \\
 } \\
-$continue $gesturename$
+$continue $gesturename$	
 
 
 
@@ -42,7 +42,7 @@ $sequence $gesturename$ { \\
 	blendlayer $gesturename$spine 0 $InFrame$ $outFrame$ $LastFrame$ spline \\
 	iklock rfoot 1 0 iklock lfoot 1 0 \\
 } \\
-$continue $gesturename$
+$continue $gesturename$	
 
 
 $definemacro makeflinchgesture gesturename filename InFrame OutFrame LastFrame \\
@@ -61,12 +61,12 @@ $sequence $gesturename$ { \\
   blendlayer $gesturename$outDelta $OutFrame$ $OutFrame$ $LastFrame$ $LastFrame$ \\
   iklock rfoot 1 0 iklock lfoot 1 0 \\
 } \\
-$continue $gesturename$
+$continue $gesturename$	
 
 $definemacro makeflinchgesturealigned gesturename filename InFrame OutFrame LastFrame alignto \\
 $makeflinchgesture $gesturename$ $filename$ $InFrame$ $OutFrame$ $LastFrame$ \\
 $append $gesturename$inFrame alignto $alignto$ \\
-$append $gesturename$OutFrame alignto $alignto$
+$append $gesturename$OutFrame alignto $alignto$	
 
 
 $definemacro makeidlenoise idleNoiseName fileName \\ 
@@ -87,7 +87,7 @@ $definemacro makeidle idleName fileName frame idleNoiseName newLength \\
 	loop \\
 	addlayer $idleNoiseName$ \\
 } \\
-$continue $idleName$
+$continue $idleName$	
 
 
 
@@ -97,7 +97,7 @@ $sequence $sequencename$ { \\
   @$baseAnimation$ \\
   addlayer $sequencename$delta \\
 } \\
-$continue $sequencename$
+$continue $sequencename$	
 
 
 
@@ -122,7 +122,7 @@ $sequence $gesturename$ { \\
   iklock rhand 0 0 \\
   noautoik \\
 } \\
-$continue $gesturename$
+$continue $gesturename$	
 
 $definemacro makeflatturngesture gesturename filename Angle Apex Accent LastFrame Inner Outer \\
 $animation @$gesturename$zero $filename$ frame 0 0 \\
@@ -144,7 +144,7 @@ $sequence $gesturename$ { \\
   iklock rhand 0 0 \\
   noautoik \\
 } \\
-$continue $gesturename$
+$continue $gesturename$	
 
 
 

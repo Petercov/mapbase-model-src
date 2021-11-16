@@ -269,7 +269,7 @@ $sequence $gesturename$ { \\
   blendlayer $gesturename$CoreDelta $InFrame$ $InFrame$ $OutFrame$ $OutFrame$ \\
   blendlayer $gesturename$outDelta $OutFrame$ $OutFrame$ $LastFrame$ $LastFrame$ \\
 } \\
-$continue $gesturename$
+$continue $gesturename$	
 
 $makeflinchgesture_rleg "gesture_melee_kick" "police_ss_anims\adoorkick.smd" 7 32 45
 $append gesture_melee_kick { activity "ACT_GESTURE_MELEE_ATTACK2" 1 { event 3 20 "" } fps 40 }

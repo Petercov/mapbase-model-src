@@ -31,7 +31,7 @@ $sequence $SeqName$ $IdleAnim$ { \\
 	fadeout 0.25 \\
 	cmdlist lockfeet \\
 } \\
-$continue $SeqName$
+$continue $SeqName$	
 
 // This makes a dynamic interaction from an existing layer.
 $definemacro MakeDynamicInteractionFromExistingSeq SeqName ExistingAnim IdleAnim InFrame OutFrame FrameNum \\
@@ -43,4 +43,4 @@ $sequence $SeqName$ $IdleAnim$ { \\
 	fadeout 0.25 \\
 	cmdlist lockfeet \\
 } \\
-$continue $SeqName$
+$continue $SeqName$	

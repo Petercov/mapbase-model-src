@@ -18,7 +18,7 @@ $sequence $gesturename$ { \\
 	blendlayer $gesturename$spine 0 $InFrame$ $outFrame$ $LastFrame$ spline \\
 	iklock rfoot 1 0 iklock lfoot 1 0 \\
 } \\
-$continue $gesturename$
+$continue $gesturename$	
 
 // ----------------------------------------------------------------
 

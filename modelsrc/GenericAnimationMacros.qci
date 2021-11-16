@@ -189,7 +189,7 @@ $sequence $SeqName$ $IdleAnim$ { \\
 	fadeout 0.25 \\
 	cmdlist lockfeet \\
 } \\
-$continue $SeqName$
+$continue $SeqName$	
 
 // =============================================================================================
 // 
@@ -247,7 +247,7 @@ $sequence $Name$ $ActualAnim$ { \\
 	match a_$Name$ \\
 	ikrule rhand touch "ValveBiped.Bip01_R_Hand" usesource \\
 } \\
-$continue $Name
+$continue $Name$	
 
 
 // 

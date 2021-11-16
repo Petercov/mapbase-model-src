@@ -56,7 +56,7 @@ $sequence $layername$ { \\
 	iklock rfoot 1 0 iklock lfoot 1 0 \\
 	hidden \\
 	} \\
-$continue $layername$
+$continue $layername$	
 
 
 //
@@ -83,7 +83,7 @@ $sequence $layername$ { \\
 	iklock rfoot 1 0 iklock lfoot 1 0 \\
 	hidden \\
 	} \\
-$continue $layername$
+$continue $layername$	
 
 
 //
@@ -91,7 +91,7 @@ $continue $layername$
 //
 $definemacro makeidle idlename filename frame aimlayer \\
 $sequence $idlename$ $filename$ alignto reference frame $frame$ $frame$ numframes 30 loop addlayer $aimlayer$ \\
-$continue $idlename$
+$continue $idlename$	
 
 
 //
@@ -115,7 +115,7 @@ $sequence $runname$ { \\
 	addlayer $runname$_mod \\
 	addlayer $aimlayer$ \\
 	} \\
-$continue $runname$
+$continue $runname$	
 
 //
 // make a running animation from an upper body animation blended on top of a 
@@ -137,7 +137,7 @@ $sequence $runname$ { \\
 	addlayer $aimlayer$ \\
 	loop \\
 	} \\
-$continue $runname$
+$continue $runname$	
 
 
 //
@@ -145,7 +145,7 @@ $continue $runname$
 //
 $definemacro makecidle cidlename filename frame aimlayer \\
 $sequence $cidlename$ $filename$ alignto reference frame $frame$ $frame$ numframes 30 loop addlayer $aimlayer$ \\
-$continue $cidlename$
+$continue $cidlename$	
 
 //
 // make an idle animation from a composite of a standing animation and a crouch animation, add in aiming
@@ -161,7 +161,7 @@ $sequence $cidlename$ $filenameB$ { \\
 	addlayer $aimlayer$ \\
 	loop \\ 
 	} \\
-$continue $cidlename$
+$continue $cidlename$	
 
 //
 // make a crouched walking animation from a world spacecomposite of an upper body animation
@@ -185,7 +185,7 @@ $sequence $crouch_walkname$ { \\
 	addlayer $aimlayer$ \\
 	loop \\
 	} \\
-$continue $crouch_walkname$
+$continue $crouch_walkname$	
 
 //
 // make a simple delta animation to add on to an upper body
@@ -196,7 +196,7 @@ $sequence $rangename$ a_$rangename$ { \\
 	iklock lfoot 1 0 iklock rfoot 1 0 \\
 	delta \\
 	} \\
-$continue $rangename$
+$continue $rangename$	
 
 //
 // make a jump animation from a composite of an upper body pose and the CS jump
@@ -208,7 +208,7 @@ $sequence $jumpname$ "..\hl2mp_ported_anims\CS_Jump" { \\
 	worldspaceblend a_$jumpname$ \\
 	weightlist AllBones \\
 	} \\
-$continue $jumpname$
+$continue $jumpname$	
 
 //
 // make a upper body replacement animation
@@ -218,7 +218,7 @@ $sequence $reloadname$ $filename$ { \\
 	weightlist UpperbodyBlend \\
 	iklock lfoot 1 0 iklock rfoot 1 0 \\
 	} \\
-$continue $reloadname$
+$continue $reloadname$	
 
 // ================================================================
 
@@ -249,7 +249,7 @@ $sequence $runname$ { \\
 	blendlayer $runname$_mod 0 1 2 2 poseparameter move_y spline \\
 	addlayer $aimlayer$ \\
 	} \\
-$continue $runname$
+$continue $runname$	
 
 $definemacro makerun_9way runname filename frame aimlayer idlefile idleframe \\
 $sequence $runname$_mod $filename$ { \\
@@ -275,7 +275,7 @@ $sequence $runname$ { \\
 	addlayer $aimlayer$ \\
 	loop \\
 	} \\
-$continue $runname$
+$continue $runname$	
 
 $definemacro makecwalk_9way crouch_walkname filename frame aimlayer idlefile idleframe \\
 $animation a_$crouch_walkname$_base $filename$ frame $frame$ $frame$ \\
@@ -298,7 +298,7 @@ $sequence $crouch_walkname$ { \\
 	addlayer $aimlayer$ \\
 	loop \\
 	} \\
-$continue $crouch_walkname$
+$continue $crouch_walkname$	
 
 // ================================================================
 
@@ -329,7 +329,7 @@ $sequence $walkname$ { \\
 	blendlayer $walkname$_mod 0 1 2 2 poseparameter move_y spline \\
 	addlayer $aimlayer$ \\
 	} \\
-$continue $walkname$
+$continue $walkname$	
 
 $definemacro makewalk_9way walkname filename frame aimlayer idlefile idleframe \\
 $sequence $walkname$_mod $filename$ { \\
@@ -355,7 +355,7 @@ $sequence $walkname$ { \\
 	addlayer $aimlayer$ \\
 	loop \\
 	} \\
-$continue $walkname$
+$continue $walkname$	
 
 
 

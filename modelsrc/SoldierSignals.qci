@@ -24,7 +24,7 @@ $sequence $Name$ $Anim$ { \\
 	fps $SignalFPS$ \\
 	activity $Activity$ 1 \\
 } \\
-$continue $Name$
+$continue $Name$	
 
 // This is what lets the gesture signals be usede in Faceposer.
 $definemacro DefaultSignalGestures_FaceposerKV Apex Accent Loop End Thumbnail \\
@@ -70,7 +70,7 @@ $sequence $Name$ { \\
 	activity $Activity$ 1 \\
 	fps $SignalFPS$ \\
 } \\
-$continue $Name$
+$continue $Name$	
 
 
 $definemacro DefaultSignalSequences BaseAnim FPS \\

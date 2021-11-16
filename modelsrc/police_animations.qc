@@ -182,6 +182,8 @@ $include "l4d1_ported_anims\L4D1_PistolAnims.qci" // Metrocops technically have 
 
 $include "NPCDoorAnims.qci"
 
+$include "APCPassenger.qci"
+
 // ================================================================
 $include "ProtectedRun.qci"
 
