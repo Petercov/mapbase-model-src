@@ -89,9 +89,13 @@ $continue $layername$
 //
 // make an idle animation from a single frame, add in aiming
 //
-$definemacro makeidle idlename filename frame aimlayer \\
+$definemacro makeidle_noik idlename filename frame aimlayer \\
 $sequence $idlename$ $filename$ alignto reference frame $frame$ $frame$ numframes 30 loop addlayer $aimlayer$ \\
 $continue $idlename$	
+
+$definemacro makeidle idlename filename frame aimlayer \\
+$makeidle_noik $idlename$ $filename$ $frame$ $aimlayer$ ikrule "lhand" touch "ValveBiped.Bip01_R_Hand" \\
+$continue $idlename$
 
 
 //
@@ -143,14 +147,18 @@ $continue $runname$
 //
 // make an idle animation from a single frame, add in aiming
 //
-$definemacro makecidle cidlename filename frame aimlayer \\
+$definemacro makecidle_noik cidlename filename frame aimlayer \\
 $sequence $cidlename$ $filename$ alignto reference frame $frame$ $frame$ numframes 30 loop addlayer $aimlayer$ \\
 $continue $cidlename$	
+
+$definemacro makecidle cidlename filename frame aimlayer \\
+$makecidle_noik $cidlename$ $filename$ $frame$ $aimlayer$ ikrule "lhand" touch "ValveBiped.Bip01_R_Hand" \\
+$continue $cidlename$
 
 //
 // make an idle animation from a composite of a standing animation and a crouch animation, add in aiming
 //
-$definemacro makecidleB cidlename filename frame filenameB frameB aimlayer \\
+$definemacro makecidleB_noik cidlename filename frame filenameB frameB aimlayer \\
 $animation a_$cidlename$_base $filename$ frame $frame$ $frame$ \\
 $sequence $cidlename$ $filenameB$ { \\
 	frame $frameB$ $frameB$ \\
@@ -162,6 +170,10 @@ $sequence $cidlename$ $filenameB$ { \\
 	loop \\ 
 	} \\
 $continue $cidlename$	
+
+$definemacro makecidleB cidlename filename frame filenameB frameB aimlayer \\
+$makecidleB_noik $cidlename$ $filename$ $frame$ $filenameB$ $frameB$ $aimlayer$ ikrule "lhand" touch "ValveBiped.Bip01_R_Hand" \\
+$continue $cidlename$
 
 //
 // make a crouched walking animation from a world spacecomposite of an upper body animation
@@ -197,6 +209,18 @@ $sequence $rangename$ a_$rangename$ { \\
 	delta \\
 	} \\
 $continue $rangename$	
+
+//
+// make a simple delta animation to add on to an upper body
+//
+$definemacro makerange_releaseik rangename filename startframe \\
+$animation a_$rangename$ $filename$ subtract a_$rangename$ $startframe$ weightlist HipsUpperbodyReplace \\
+$sequence $rangename$ a_$rangename$ { \\
+	iklock lfoot 1 0 iklock rfoot 1 0 \\
+	ikrule lhand release \\
+	delta \\
+	} \\
+$continue $rangename$
 
 //
 // make a jump animation from a composite of an upper body pose and the CS jump
