@@ -8,20 +8,20 @@ $definemacro GenericIdle IdleName IdleSeq IdleAct \\
 $sequence $IdleName$ { $IdleSeq$ activity $IdleAct$ 1 loop \\
 	cmdlist lockfeetandlefthand \\
 } \\
-$continue $IdleName$
+$continue $IdleName$	
 
 $definemacro GenericIdleWeight IdleName IdleSeq IdleAct ActWeight \\
 $sequence $IdleName$ { $IdleSeq$ activity $IdleAct$ $ActWeight$ loop \\
 	cmdlist lockfeetandlefthand \\
 } \\
-$continue $IdleName$
+$continue $IdleName$	
 
 $definemacro GenericIdleHands IdleName IdleSeq IdleAct HandsLayer \\
 $sequence $IdleName$ { $IdleSeq$ activity $IdleAct$ 1 loop \\
 	cmdlist lockfeet \\
 	blendlayer $HandsLayer$ 0 0 0 0 local \\
 } \\
-$continue $IdleName$
+$continue $IdleName$	
 
 $definemacro GenericCombatIdle IdleName IdleSeq IdleAct AimLayer \\
 $sequence $IdleName$ { \\
@@ -31,7 +31,7 @@ $sequence $IdleName$ { \\
 	loop \\
 	cmdlist lockfeetandlefthand \\
 } \\
-$continue $IdleName$
+$continue $IdleName$	
 
 $definemacro GenericCombatIdle_NoHandIK IdleName IdleSeq IdleAct AimLayer \\
 $sequence $IdleName$ { \\
@@ -41,7 +41,7 @@ $sequence $IdleName$ { \\
 	loop \\
 	cmdlist lockfeet \\
 } \\
-$continue $IdleName$
+$continue $IdleName$	
 
 $definemacro GenericShoot SeqName FileName ActName AimLayer \\
 $sequence $SeqName$ { \\
@@ -51,7 +51,7 @@ $sequence $SeqName$ { \\
 	activity $ActName$ 1 \\
 	cmdlist lockfeetandlefthand \\
 } \\
-$continue $SeqName$
+$continue $SeqName$	
 
 $definemacro GenericReload SeqName FileName ActName AimLayer AimFadeOut AimFadeIn NumFrames EventFrame \\
 $sequence $SeqName$ { \\
@@ -65,7 +65,7 @@ $sequence $SeqName$ { \\
 	ikrule "rhand" release \\
 	ikrule "lhand" release \\
 } \\
-$continue $SeqName$
+$continue $SeqName$	
 
 $definemacro GenericReloadSoundMatched SeqName FileName ActName AimLayer AimFadeOut AimFadeIn NumFrames EventFrame \\
 $sequence $SeqName$ { \\
@@ -78,7 +78,7 @@ $sequence $SeqName$ { \\
 	ikrule "rhand" release \\
 	ikrule "lhand" release \\
 } \\
-$continue $SeqName$
+$continue $SeqName$	
 
 $definemacro GenericReloadNoAim SeqName FileName ActName EventFrame \\
 $sequence $SeqName$ { \\
@@ -90,7 +90,7 @@ $sequence $SeqName$ { \\
 	ikrule "rhand" release \\
 	ikrule "lhand" release \\
 } \\
-$continue $SeqName$
+$continue $SeqName$	
 
 $definemacro GenericAimMoveLayer SeqName FileName HandsLayer AimLayer \\
 $sequence $SeqName$ { $FileName$ hidden addlayer $AimLayer$ loop \\
@@ -99,7 +99,7 @@ $sequence $SeqName$ { $FileName$ hidden addlayer $AimLayer$ loop \\
 	blendlayer $HandsLayer$ 0 0 0 0 local \\
 	weightlist "weights_layer_walk_ar2" \\
 } \\
-$continue $SeqName$
+$continue $SeqName$	
 
 $definemacro GenericMoveLayer LayerName FileName WeightList \\
 $sequence $LayerName$ { \\
@@ -110,7 +110,7 @@ $sequence $LayerName$ { \\
 	ikrule "rhand" release \\
 	weightlist $WeightList$ \\
 } \\
-$continue $LayerName$
+$continue $LayerName$	
 
 // ----------------------------------------------------------------
 
@@ -124,7 +124,7 @@ $sequence $SeqName$ { \\
 	} \\
 	addlayer $LayerName$ \\ // "blendlayer $LayerName$ 0 0 0 0 local" apparently doesn't keep IK
 } \\
-$continue $SeqName$
+$continue $SeqName$	
 
 $definemacro GenericRunLayered SeqName ActivityName LayerName InteriorAct \\
 $sequence $SeqName$ { \\
@@ -136,7 +136,7 @@ $sequence $SeqName$ { \\
 	} \\
 	addlayer $LayerName$ \\ // "blendlayer $LayerName$ 0 0 0 0 local" apparently doesn't keep IK
 } \\
-$continue $SeqName$
+$continue $SeqName$	
 
 // ----------------------------------------------------------------
 
@@ -150,7 +150,7 @@ $sequence $SeqName$ { \\
 	activity $ActName$ 1 \\
 	cmdlist lockfeetandlefthand \\
 } \\
-$continue $SeqName$
+$continue $SeqName$	
 
 $definemacro GenericShootFromIdle_NoHandIK SeqName FileName ActName AimLayer GestureLayer NumFrames \\
 $sequence $SeqName$ { \\
@@ -162,7 +162,7 @@ $sequence $SeqName$ { \\
 	activity $ActName$ 1 \\
 	cmdlist lockfeet \\
 } \\
-$continue $SeqName$
+$continue $SeqName$	
 
 $definemacro GenericReloadFromIdle SeqName FileName ActName AimLayer GestureLayer AimFadeOut AimFadeIn NumFrames EventFrame \\
 $sequence $SeqName$legs $FileName$ weightlist "LegsAndPelvis" hidden \\
@@ -178,7 +178,7 @@ $sequence $SeqName$ { \\
 	ikrule "rhand" release \\
 	ikrule "lhand" release \\
 } \\
-$continue $SeqName$
+$continue $SeqName$	
 
 $definemacro GenericReloadFromIdle_NoAim SeqName FileName ActName GestureLayer NumFrames EventFrame \\
 $sequence $SeqName$legs $FileName$ weightlist "LegsAndPelvis" hidden \\
@@ -192,7 +192,7 @@ $sequence $SeqName$ { \\
 	ikrule "rhand" release \\
 	ikrule "lhand" release \\
 } \\
-$continue $SeqName$
+$continue $SeqName$	
 
 
 

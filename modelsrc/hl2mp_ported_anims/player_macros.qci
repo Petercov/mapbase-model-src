@@ -95,7 +95,7 @@ $continue $idlename$
 
 $definemacro makeidle idlename filename frame aimlayer \\
 $makeidle_noik $idlename$ $filename$ $frame$ $aimlayer$ ikrule "lhand" touch "ValveBiped.Bip01_R_Hand" \\
-$continue $idlename$
+$continue $idlename$	
 
 
 //
@@ -153,7 +153,7 @@ $continue $cidlename$
 
 $definemacro makecidle cidlename filename frame aimlayer \\
 $makecidle_noik $cidlename$ $filename$ $frame$ $aimlayer$ ikrule "lhand" touch "ValveBiped.Bip01_R_Hand" \\
-$continue $cidlename$
+$continue $cidlename$	
 
 //
 // make an idle animation from a composite of a standing animation and a crouch animation, add in aiming
@@ -173,7 +173,7 @@ $continue $cidlename$
 
 $definemacro makecidleB cidlename filename frame filenameB frameB aimlayer \\
 $makecidleB_noik $cidlename$ $filename$ $frame$ $filenameB$ $frameB$ $aimlayer$ ikrule "lhand" touch "ValveBiped.Bip01_R_Hand" \\
-$continue $cidlename$
+$continue $cidlename$	
 
 //
 // make a crouched walking animation from a world spacecomposite of an upper body animation
@@ -220,7 +220,7 @@ $sequence $rangename$ a_$rangename$ { \\
 	ikrule lhand release \\
 	delta \\
 	} \\
-$continue $rangename$
+$continue $rangename$	
 
 //
 // make a jump animation from a composite of an upper body pose and the CS jump
