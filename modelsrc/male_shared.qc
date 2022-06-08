@@ -74,7 +74,7 @@ $definevariable AnimMatch_Default a_AnimMatch_Default
 $include "BaseDI.qci"
 $include "AlyxDI.qci"
 $include "AntlionRecvDI.qci"
-
+$include "KillMoveDI.qci"
 // Needs to use response criteria now
 $include "HunterRecvDI.qci"
 
@@ -259,5 +259,6 @@ $KeyValues
 	dynamic_interactions 
 	{
 		$DIKV_Alyx
+		$DIKV_Hand2Hand
 	}
 }

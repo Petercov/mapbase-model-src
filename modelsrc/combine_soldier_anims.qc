@@ -70,7 +70,8 @@ $include "BaseDI.qci"
 // DO NOT uncomment unless you have the interaction keyvalues ready for each model!
 // Having the interaction sequences without the keyvalues bypasses our fix for the "interaction twinning" bug
 // and makes soldiers susceptible to it.
-//$include "AlyxDI.qci"
+$include "AlyxDI.qci"
+$include "KillMoveDI.qci"
 
 $include "SoldierSignals.qci"
 
@@ -306,3 +307,12 @@ $append Heal {
 }
 
 $include "SoldierAnimationNodes.qci"
+
+$KeyValues
+{
+	dynamic_interactions 
+	{
+		$DIKV_Alyx
+		$DIKV_Hand2Hand
+	}
+}

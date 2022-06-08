@@ -1,0 +1,52 @@
+
+// 
+// Make sure to include BaseDI.qci before using!
+// 
+
+$pushd "killmove_anims"
+
+$Sequence "killmove_throw_shoulder" {
+	"killmove_throw_shoulder.smd"
+	fadein 0.1
+	fadeout 0.1
+	fps 60
+	{ event AE_NPC_HOLSTER 1 "" }
+	//{ event AE_NPC_DRAW 128 "" }
+	origin 0 11.746452 0
+	rotate 180
+	LX
+	
+	ikrule lfoot footstep range 0 0 0 3 contact 0
+	ikrule lfoot footstep range 10 20 90 97 contact 20
+	ikrule lfoot footstep range 113 117 130 130 contact 118
+	ikrule rfoot footstep range 0 0 23 31 contact 0
+	ikrule rfoot footstep range 42 46 71 82 contact 46
+	ikrule rfoot footstep range 94 113 130 130 contact 106
+}
+
+$Sequence "killmove_throw_shoulder_recv" {
+	"killmove_throw_shoulder_recv.smd"
+	fadein 0.1
+	fadeout 0.1
+	fps 60
+	//numframes 80
+	{ event AE_NPC_WEAPON_DROP 4 "" }
+	{ event AE_CL_PLAYSOUND 12 "Flesh.ImpactSoft" }
+	{ event AE_CL_PLAYSOUND 36 "outland_11.foley.Alyx_Hug_Eli" }
+	{ event AE_CL_PLAYSOUND 76 "Flesh.Break" }
+	{ event AE_NPC_HURT_INTERACTION_PARTNER 76 "ME 100" }
+}
+
+$popd
+
+$definemacro DIKV_Hand2Hand \\
+	"killmove_throw_shoulder" \\
+	{ \\
+		"mapbase" "1" \\
+		"trigger" "auto_in_combat" \\
+		"origin_relative" "58 0 0" \\
+		"angles_relative" "0 180 0" \\
+		"sequence" "killmove_throw_shoulder" \\
+		"recv_sequence" "killmove_throw_shoulder_recv" \\
+		"delay" "20.0" \\
+	} \\

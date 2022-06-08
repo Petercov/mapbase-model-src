@@ -126,7 +126,7 @@ $definevariable Blend_Aim_Rifle "soldier_Aim_9_directions"
 $include "BaseDI.qci"
 $include "AlyxDI.qci"
 $include "AntlionRecvDI.qci"
-
+$include "KillMoveDI.qci"
 $include "HunterRecvDI.qci"
 
 $include "AlyxBlindfire.qci"
@@ -227,5 +227,6 @@ $KeyValues
 	dynamic_interactions 
 	{
 		$DIKV_Alyx
+		$DIKV_Hand2Hand
 	}
 }
