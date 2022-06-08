@@ -75,6 +75,10 @@ $sequence "Ladder_Idlenoise" {
 	fps 40
 	loop
 	weightlist "weights_Idlenoise"
+	iklock lfoot 1.0 0.0
+	iklock rfoot 1.0 0.0
+	iklock lhand 1.0 0.1
+	iklock rhand 1.0 0.1
 }
 
 $sequence "Ladder_Ascend" {
