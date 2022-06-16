@@ -102,6 +102,8 @@ $makeweapongesturep "gesture_reload_357" "police_animations_anims\custom\reload_
 
 $append "gesture_reload_357" {
 	$357ReloadSounds
+	{ event 3017 0 "" }
+	{ event 3018 41 "" }
 	activity "ACT_GESTURE_RELOAD_REVOLVER" 1
 }
 
