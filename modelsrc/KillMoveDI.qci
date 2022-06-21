@@ -3,10 +3,8 @@
 // Make sure to include BaseDI.qci before using!
 // 
 
-$pushd "killmove_anims"
-
 $Sequence "killmove_throw_shoulder" {
-	"killmove_throw_shoulder.smd"
+	"killmove_anims/killmove_throw_shoulder.smd"
 	fadein 0.1
 	fadeout 0.1
 	fps 60
@@ -25,7 +23,7 @@ $Sequence "killmove_throw_shoulder" {
 }
 
 $Sequence "killmove_throw_shoulder_recv" {
-	"killmove_throw_shoulder_recv.smd"
+	"killmove_anims/killmove_throw_shoulder_recv.smd"
 	fadein 0.1
 	fadeout 0.1
 	fps 60
@@ -33,11 +31,94 @@ $Sequence "killmove_throw_shoulder_recv" {
 	{ event AE_NPC_WEAPON_DROP 4 "" }
 	{ event AE_CL_PLAYSOUND 12 "Flesh.ImpactSoft" }
 	{ event AE_CL_PLAYSOUND 36 "outland_11.foley.Alyx_Hug_Eli" }
-	{ event AE_CL_PLAYSOUND 76 "Flesh.Break" }
-	{ event AE_NPC_HURT_INTERACTION_PARTNER 76 "ME 100" }
+	{ event AE_SV_PLAYSOUND 76 "Flesh.Break" }
+	{ event AE_NPC_HURT_INTERACTION_PARTNER 76 "ME 200" }
 }
 
-$popd
+$Sequence "killmove_dpkick_idle_layer" $Blend_SMD_Default$ hidden cmdlist lockfeet
+
+$MakeDynamicInteraction killmove_dpkick_side "killmove_anims/km_dpkick_left" $Blend_SMD_Default$ 5 80 90
+$append killmove_dpkick_side_layer {
+	rotate -90
+}
+$append killmove_dpkick_side {
+	{ event AE_CL_PLAYSOUND 15 "NPC_MetroPolice.RunFootstepLeft" }
+	{ event AE_CL_PLAYSOUND 25 "Flesh.ImpactHard" }
+	{ event AE_CL_PLAYSOUND 38 "AI_BaseNPC.BodyDrop_Heavy" }
+
+}
+
+$Sequence "killmove_dpkick_front" {
+	"killmove_anims/km_dpkick_front"
+	{ event AE_CL_PLAYSOUND 10 "NPC_MetroPolice.RunFootstepLeft" }
+	{ event AE_CL_PLAYSOUND 22 "Flesh.ImpactHard" }
+	{ event AE_CL_PLAYSOUND 32 "AI_BaseNPC.BodyDrop_Heavy" }
+	fps 30
+	fadein 0.25
+	fadeout 0.25
+	rotate 180
+	origin 0 -23 0	
+	blendlayer "killmove_dpkick_idle_layer" 0 0 0 5 spline
+	blendlayer "killmove_dpkick_idle_layer" 80 95 96 96 spline
+	LX
+	
+	ikrule lfoot footstep range 0 0 11 13
+	ikrule lfoot footstep range 66 69 80 86
+	ikrule lfoot footstep range 86 92 95 95 contact 94
+	ikrule rfoot footstep range 0 0 10 12
+	ikrule rfoot footstep range 60 63 67 70
+	ikrule rfoot footstep range 70 81 95 95 contact 94
+}
+
+$Sequence "killmove_dpkick_recv_front" {
+	"killmove_anims/recv_km_dpkick_front"
+	{ event AE_CL_PLAYSOUND 23 "Flesh.Break" }
+	{ event AE_NPC_WEAPON_FIRE 28 "" }
+	{ event AE_NPC_HURT_INTERACTION_PARTNER 32 "ME 200" }
+	fps 30
+	fadein 0.25
+	fadeout 0.25
+	blendlayer "killmove_dpkick_idle_layer" 0 0 0 5 spline
+	
+	ikrule lfoot footstep range 0 0 10 15
+	ikrule lfoot footstep range 15 19 22 24
+	ikrule rfoot footstep range 4 9 24 26
+}
+
+$Sequence "killmove_dpkick_recv_back" {
+	"killmove_anims/recv_km_dpkick_back"
+	{ event AE_CL_PLAYSOUND 23 "Flesh.Break" }
+	{ event AE_NPC_WEAPON_FIRE 28 "" }
+	{ event AE_NPC_HURT_INTERACTION_PARTNER 34 "ME 200" }
+	fps 30
+	fadein 0.25
+	fadeout 0.25
+	origin 0 -10 0
+	blendlayer "killmove_dpkick_idle_layer" 0 0 22 25 spline
+}
+
+$Sequence "killmove_dpkick_recv_left" {
+	"killmove_anims/recv_km_dpkick_left"
+	{ event AE_CL_PLAYSOUND 25 "Flesh.Break" }
+	{ event AE_NPC_WEAPON_FIRE 28 "" }
+	{ event AE_NPC_HURT_INTERACTION_PARTNER 35 "ME 200" }
+	fps 30
+	fadein 0.25
+	fadeout 0.25
+	origin 0 4 0
+	blendlayer "killmove_dpkick_idle_layer" 0 0 25 28 spline
+}
+
+$Sequence "killmove_dpkick_recv_right" {
+	"killmove_anims/recv_km_dpkick_right"
+	{ event AE_CL_PLAYSOUND 25 "Flesh.Break" }
+	{ event AE_NPC_WEAPON_FIRE 30 "" }
+	{ event AE_NPC_HURT_INTERACTION_PARTNER 35 "ME 200" }
+	fps 30
+	fadein 0.25
+	fadeout 0.25
+	blendlayer "killmove_dpkick_idle_layer" 0 0 25 28 spline
+}
 
 $definemacro DIKV_Hand2Hand \\
 	"killmove_throw_shoulder" \\
@@ -48,5 +129,45 @@ $definemacro DIKV_Hand2Hand \\
 		"angles_relative" "0 180 0" \\
 		"sequence" "killmove_throw_shoulder" \\
 		"recv_sequence" "killmove_throw_shoulder_recv" \\
-		"delay" "20.0" \\
+		"delay" "10.0" \\
+	} \\
+	"killmove_dropkick_front" \\
+	{ \\
+		"mapbase" "1" \\
+		"trigger" "auto_in_combat" \\
+		"origin_relative" "103 0 0" \\
+		"angles_relative" "0 180 0" \\
+		"sequence" "killmove_dpkick_front" \\
+		"recv_sequence" "killmove_dpkick_recv_front" \\
+		"delay" "10.0" \\
+	} \\
+	"killmove_dropkick_back" \\
+	{ \\
+		"mapbase" "1" \\
+		"trigger" "auto_in_combat" \\
+		"origin_relative" "113 0 0" \\
+		"angles_relative" "0 0 0" \\
+		"sequence" "killmove_dpkick_front" \\
+		"recv_sequence" "killmove_dpkick_recv_back" \\
+		"delay" "10.0" \\
+	} \\
+	"killmove_dropkick_left" \\
+	{ \\
+		"mapbase" "1" \\
+		"trigger" "auto_in_combat" \\
+		"origin_relative" "53 0 0" \\
+		"angles_relative" "0 90 0" \\
+		"sequence" "killmove_dpkick_side" \\
+		"recv_sequence" "killmove_dpkick_recv_left" \\
+		"delay" "10.0" \\
+	} \\
+	"killmove_dropkick_right" \\
+	{ \\
+		"mapbase" "1" \\
+		"trigger" "auto_in_combat" \\
+		"origin_relative" "56 0 0" \\
+		"angles_relative" "0 -90 0" \\
+		"sequence" "killmove_dpkick_side" \\
+		"recv_sequence" "killmove_dpkick_recv_right" \\
+		"delay" "10.0" \\
 	} \\
