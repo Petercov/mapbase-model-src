@@ -1,0 +1,254 @@
+$WeightList "weights_holdshield" {
+	 "ValveBiped.Bip01_Pelvis" 0
+	 "ValveBiped.Bip01_Spine" 0
+	 "ValveBiped.Bip01_Spine1" 0
+	 "ValveBiped.Bip01_Spine2" 0
+	 "ValveBiped.Bip01_Spine4" 0
+	 "ValveBiped.Bip01_Neck1" 0
+	 "ValveBiped.Bip01_Head1" 0
+	 "ValveBiped.forward" 0
+	 "ValveBiped.Bip01_R_Clavicle" 0
+	 "ValveBiped.Bip01_R_UpperArm" 0
+	 "ValveBiped.Bip01_R_Forearm" 0
+	 "ValveBiped.Bip01_R_Hand" 0
+	 "ValveBiped.Anim_Attachment_RH" 0
+	 "ValveBiped.Bip01_L_Clavicle" 0
+	 "ValveBiped.Bip01_L_UpperArm" 0.8
+	 "ValveBiped.Bip01_L_Forearm" 1
+	 "ValveBiped.Bip01_L_Hand" 1
+	 "ValveBiped.Anim_Attachment_LH" 0
+	 "ValveBiped.Bip01_R_Thigh" 0
+	 "ValveBiped.Bip01_R_Calf" 0
+	 "ValveBiped.Bip01_R_Foot" 0
+	 "ValveBiped.Bip01_R_Toe0" 0
+	 "ValveBiped.Bip01_L_Thigh" 0
+	 "ValveBiped.Bip01_L_Calf" 0
+	 "ValveBiped.Bip01_L_Foot" 0
+	 "ValveBiped.Bip01_L_Toe0" 0
+	 "ValveBiped.Bip01_L_Finger4" 1
+	 "ValveBiped.Bip01_L_Finger41" 1
+	 "ValveBiped.Bip01_L_Finger42" 1
+	 "ValveBiped.Bip01_L_Finger3" 1
+	 "ValveBiped.Bip01_L_Finger31" 1
+	 "ValveBiped.Bip01_L_Finger32" 1
+	 "ValveBiped.Bip01_L_Finger2" 1
+	 "ValveBiped.Bip01_L_Finger21" 1
+	 "ValveBiped.Bip01_L_Finger22" 1
+	 "ValveBiped.Bip01_L_Finger1" 1
+	 "ValveBiped.Bip01_L_Finger11" 1
+	 "ValveBiped.Bip01_L_Finger12" 1
+	 "ValveBiped.Bip01_L_Finger0" 1
+	 "ValveBiped.Bip01_L_Finger01" 1
+	 "ValveBiped.Bip01_L_Finger02" 1
+	 "ValveBiped.Bip01_R_Finger4" 0
+	 "ValveBiped.Bip01_R_Finger41" 0
+	 "ValveBiped.Bip01_R_Finger42" 0
+	 "ValveBiped.Bip01_R_Finger3" 0
+	 "ValveBiped.Bip01_R_Finger31" 0
+	 "ValveBiped.Bip01_R_Finger32" 0
+	 "ValveBiped.Bip01_R_Finger2" 0
+	 "ValveBiped.Bip01_R_Finger21" 0
+	 "ValveBiped.Bip01_R_Finger22" 0
+	 "ValveBiped.Bip01_R_Finger1" 0
+	 "ValveBiped.Bip01_R_Finger11" 0
+	 "ValveBiped.Bip01_R_Finger12" 0
+	 "ValveBiped.Bip01_R_Finger0" 0
+	 "ValveBiped.Bip01_R_Finger01" 0
+	 "ValveBiped.Bip01_R_Finger02" 0
+}
+
+$WeightList "weights_holdshield_walk" {
+	 "ValveBiped.Bip01_Pelvis" 0
+	 "ValveBiped.Bip01_Spine" 0
+	 "ValveBiped.Bip01_Spine1" 0
+	 "ValveBiped.Bip01_Spine2" 0
+	 "ValveBiped.Bip01_Spine4" 0
+	 "ValveBiped.Bip01_Neck1" 0
+	 "ValveBiped.Bip01_Head1" 0
+	 "ValveBiped.forward" 0
+	 "ValveBiped.Bip01_R_Clavicle" 0
+	 "ValveBiped.Bip01_R_UpperArm" 0
+	 "ValveBiped.Bip01_R_Forearm" 0
+	 "ValveBiped.Bip01_R_Hand" 0
+	 "ValveBiped.Anim_Attachment_RH" 0
+	 "ValveBiped.Bip01_L_Clavicle" 0.8
+	 "ValveBiped.Bip01_L_UpperArm" 0.8
+	 "ValveBiped.Bip01_L_Forearm" 1
+	 "ValveBiped.Bip01_L_Hand" 1
+	 "ValveBiped.Anim_Attachment_LH" 0
+	 "ValveBiped.Bip01_R_Thigh" 0
+	 "ValveBiped.Bip01_R_Calf" 0
+	 "ValveBiped.Bip01_R_Foot" 0
+	 "ValveBiped.Bip01_R_Toe0" 0
+	 "ValveBiped.Bip01_L_Thigh" 0
+	 "ValveBiped.Bip01_L_Calf" 0
+	 "ValveBiped.Bip01_L_Foot" 0
+	 "ValveBiped.Bip01_L_Toe0" 0
+	 "ValveBiped.Bip01_L_Finger4" 1
+	 "ValveBiped.Bip01_L_Finger41" 1
+	 "ValveBiped.Bip01_L_Finger42" 1
+	 "ValveBiped.Bip01_L_Finger3" 1
+	 "ValveBiped.Bip01_L_Finger31" 1
+	 "ValveBiped.Bip01_L_Finger32" 1
+	 "ValveBiped.Bip01_L_Finger2" 1
+	 "ValveBiped.Bip01_L_Finger21" 1
+	 "ValveBiped.Bip01_L_Finger22" 1
+	 "ValveBiped.Bip01_L_Finger1" 1
+	 "ValveBiped.Bip01_L_Finger11" 1
+	 "ValveBiped.Bip01_L_Finger12" 1
+	 "ValveBiped.Bip01_L_Finger0" 1
+	 "ValveBiped.Bip01_L_Finger01" 1
+	 "ValveBiped.Bip01_L_Finger02" 1
+	 "ValveBiped.Bip01_R_Finger4" 0
+	 "ValveBiped.Bip01_R_Finger41" 0
+	 "ValveBiped.Bip01_R_Finger42" 0
+	 "ValveBiped.Bip01_R_Finger3" 0
+	 "ValveBiped.Bip01_R_Finger31" 0
+	 "ValveBiped.Bip01_R_Finger32" 0
+	 "ValveBiped.Bip01_R_Finger2" 0
+	 "ValveBiped.Bip01_R_Finger21" 0
+	 "ValveBiped.Bip01_R_Finger22" 0
+	 "ValveBiped.Bip01_R_Finger1" 0
+	 "ValveBiped.Bip01_R_Finger11" 0
+	 "ValveBiped.Bip01_R_Finger12" 0
+	 "ValveBiped.Bip01_R_Finger0" 0
+	 "ValveBiped.Bip01_R_Finger01" 0
+	 "ValveBiped.Bip01_R_Finger02" 0
+}
+
+$Animation "pg_holdshield" "police_animations_extra_anims\pg_holdshield.smd" {
+	fps 30
+	loop
+	weightlist "weights_holdshield"
+}
+
+$Animation "pg_holdshield2" "police_animations_extra_anims\pg_holdshield2.smd" {
+	fps 30
+	loop
+	weightlist "weights_holdshield"
+}
+
+$Animation "pg_holdshield2_still" "police_animations_extra_anims\pg_holdshield2_still.smd" {
+	fps 30
+	loop
+	weightlist "weights_holdshield"
+}
+
+$Animation "pg_holdshield_run" "police_animations_extra_anims\pg_holdshield_run.smd" {
+	fps 30
+	loop
+	weightlist "weights_holdshield"
+}
+
+$Animation "pg_holdshield_walk" "police_animations_extra_anims\pg_holdshield_walk.smd" {
+	fps 30
+	loop
+	weightlist "weights_holdshield_walk"
+}
+
+$Animation "a_stationed_shield_crouch" "police_animations_extra_anims\a_stationed_shield_crouch.smd" {
+	fps 30
+	loop
+}
+
+$Animation "a_stationed_shield_crouch_setup" "police_animations_extra_anims\a_stationed_shield_crouch_setup.smd" {
+	fps 30
+}
+
+$Sequence "holdshield" {
+	"pg_holdshield"
+	fadein 0.2
+	fadeout 0.2
+	hidden
+}
+
+$Sequence "holdshield2" {
+	"pg_holdshield2"
+	fadein 0.2
+	fadeout 0.2
+	hidden
+}
+
+$Sequence "holdshield2_still" {
+	"pg_holdshield2_still"
+	fadein 0.2
+	fadeout 0.2
+	hidden
+}
+
+$Sequence "holdshield_run" {
+	"pg_holdshield_run"
+	fadein 0.2
+	fadeout 0.2
+	hidden
+}
+
+$Sequence "holdshield_walk" {
+	"pg_holdshield_walk"
+	fadein 0.2
+	fadeout 0.2
+	hidden
+}
+
+$Sequence "batonshieldidle1" {
+	"police_animations_extra_anims\batonshieldidle1.smd"
+	activity "ACT_IDLE_HOLD_SHIELD" 1
+	fadein 0.2
+	fadeout 0.2
+	addlayer "holdshield2_still"
+	node "standing_baton"
+	fps 30
+	loop
+}
+
+$Sequence "batonshieldangryidle1" {
+	"police_animations_extra_anims\batonshieldangryidle1.smd"
+	activity "ACT_IDLE_ANGRY_HOLD_SHIELD" 1
+	fadein 0.2
+	fadeout 0.2
+	addlayer "holdshield2"
+	node "standing_baton"
+	fps 30
+	loop
+}
+
+$Sequence "swingbatonshield" {
+	"police_animations_extra_anims\swingbatonshield.smd"
+	activity "ACT_MELEE_ATTACK_SWING_SHIELD" 1
+	{ event 3001 13 "" }
+	fadein 0.2
+	fadeout 0.2
+	addlayer "holdshield"
+	fps 35
+}
+
+$Sequence "stationed_shield" {
+	"police_animations_extra_anims\stationed_shield.smd"
+	activity "ACT_SHIELD_STATIONED" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	loop
+}
+
+$Sequence "stationed_shield_crouch" {
+	"a_stationed_shield_crouch"
+	activity "ACT_SHIELD_STATIONED_CROUCH" 1
+	fadein 0.2
+	fadeout 0.2
+}
+
+$Sequence "stationed_shield_crouch_attack" {
+	"police_animations_extra_anims\stationed_shield_crouch_attack.smd"
+	activity "ACT_MELEE_ATTACK_SWING_STATIONED_CROUCH" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$Sequence "stationed_shield_setup" {
+	"a_stationed_shield_crouch_setup"
+	activity "ACT_SHIELD_STATIONED_SETUP" 1
+	fadein 0.2
+	fadeout 0.2
+}

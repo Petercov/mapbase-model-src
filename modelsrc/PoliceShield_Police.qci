@@ -1,0 +1,27 @@
+
+$Include "PoliceShield.qci"
+
+$Sequence "run_all_shield" {
+	$a_RunBlends
+	activity "ACT_RUN_SHIELD" 1
+	fadein 0.2
+	fadeout 0.2
+	addlayer "holdshield_run"
+}
+
+$Sequence "walk_hold_baton_shield_angry" {
+	$a_WalkBlends
+	activity "ACT_WALK_SHIELD" 1
+	fadein 0.2
+	fadeout 0.2
+	addlayer "layer_walk_hold_baton_angry"
+	addlayer "holdshield_walk"
+}
+
+// $Sequence "walk_hold_baton_shield" {
+	// $a_WalkBlends
+	// activity "ACT_WALK_SHIELD" 1
+	// fadein 0.2
+	// fadeout 0.2
+	// addlayer "holdshield_walk"
+// }

@@ -168,6 +168,7 @@ $include "SoldierWallCover.qci"
 $popd
 
 $include "CitizenRPG_Police.qci"
+$include "PoliceShield_Police.qci"
 
 $animation "@gesture_shoot_pistol_corrective_animation" "police_animations_anims\@gesture_shoot_pistol_corrective_animation.smd" {
 }

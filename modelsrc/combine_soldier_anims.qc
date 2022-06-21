@@ -233,6 +233,7 @@ $popd
 
 $include "CitizenRPG_Soldier.qci"
 $include "PoliceMelee_Soldier.qci"
+$include "PoliceShield_Soldier.qci"
 
 $sequence "melee_kick" {
 	"police_ss_anims\adoorkick.smd"
