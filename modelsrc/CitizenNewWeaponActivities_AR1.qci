@@ -72,7 +72,7 @@ $GenericWalkLayered "walk_alert_hold_ar1" "ACT_WALK_AR1_STIMULATED" "layer_walk_
 $ReadinessMoveLayer "layer_run_holding_ar1" "layer_run_holding_ar2.smd" blendlayer "relaxed_ar2_to_ar1" 0 0 0 0 local
 $ReadinessMoveLayer "layer_run_alert_holding_ar1" "layer_run_alert_holding_AR2.smd" blendlayer "relaxed_ar2_to_ar1" 0 0 0 0 local
 
-$GenericRunLayered "run_hold_ar1" "ACT_RUN_AR2" "layer_run_holding_ar1" "ACT_NEUTRAL_AR1_RELAXED"
+$GenericRunLayered "run_hold_ar1" "ACT_RUN_AR1" "layer_run_holding_ar1" "ACT_NEUTRAL_AR1_RELAXED"
 $GenericRunLayered "run_alert_hold_ar1" "ACT_RUN_AR1_STIMULATED" "layer_run_alert_holding_ar1" "ACT_NEUTRAL_AR1_RELAXED"
 
 // ----------------------------------------------------------------
