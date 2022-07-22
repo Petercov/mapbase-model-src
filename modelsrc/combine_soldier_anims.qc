@@ -212,7 +212,9 @@ $append shootAR2alt_gesture {
 
 $DefaultSignalGestures 36
 
-//$Attachment "eyes" "ValveBiped.Bip01_Head1" 4.5 -5 0 rotate 0 -90 -90
+$Attachment "eyes" "ValveBiped.Bip01_Head1" 4.5 -5 0 rotate 0 -90 -90
+// $Attachment "chest" "ValveBiped.Bip01_Spine4" -4 4 0 rotate 0 83 90
+// $Attachment "forward" "ValveBiped.forward" 0 0 0 rotate 0 0 0
 //$include "body_poses_lean.qci"
 
 // ================================================================
@@ -309,6 +311,10 @@ $append Heal {
 }
 
 $include "SoldierAnimationNodes.qci"
+
+$pushd "ChoreoModels"
+$include "ChoreoModels\body_poses_lean.qci"
+$popd
 
 $KeyValues
 {
