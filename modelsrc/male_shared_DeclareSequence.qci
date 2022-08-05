@@ -180,27 +180,37 @@ $sequence "shotgun_layer" "a_shotgun_layer" {
 	weightlist "ShotgunLayerWeightlist"
 	//delta
 	hidden
+	cmdlist lockfeetandlefthand
 }
 
 // 
 // New shotgun animation
 // (no longer using this)
 // 
-$declaresequence "Idle_Angry_Shotgun"
-//$animation "a_Idle_Angry_Shotgun" "female_shared_anims\shoot_shotgun.smd" frame 0 0
-//$sequence "Idle_Angry_Shotgun" a_Idle_Angry_Shotgun {
-//	activity "ACT_IDLE_SHOTGUN_AGITATED" 1
-//	numframes 30
-//	addlayer "shotgun_layer"
-//	node "standing"
-//	loop
-//	cmdlist lockfeetandlefthand
-//}
+//$declaresequence "Idle_Angry_Shotgun"
+$sequence "Idle_Angry_Shotgun" "male_shared_anims\Idle_Angry_Shotgun.smd" {
+	activity "ACT_IDLE_SHOTGUN" 1
+	//addlayer "shotgun_layer"
+	node "standing"
+	loop
+	cmdlist lockfeetandlefthand
+}
 
 $declaresequence "Idle_SMG1_Aim"
 $declaresequence "Idle_SMG1_Aim_Alert"
 $declaresequence "idle_angry_Ar2"
 $declaresequence "idle_ar2_aim"
+
+$sequence "Idle_Shotgun_Aim" "alyx_animations_ep2\Idle_Angry_Shotgun.smd" {
+	activity "ACT_IDLE_ANGRY_SHOTGUN" 1
+	numframes 30
+	addlayer "shotgun_layer"
+	addlayer "layer_Aim_all"
+	node "shooting"
+	loop
+	cmdlist lockfeetandlefthand
+}
+
 $declaresequence "shoot_smg1"
 $declaresequence "shoot_ar2"
 $declaresequence "shoot_ar2_alt"

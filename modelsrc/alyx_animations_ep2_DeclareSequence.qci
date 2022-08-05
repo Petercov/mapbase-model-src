@@ -48,7 +48,24 @@ $declaresequence "gesture_transition_stimulated_relaxed"
 $declaresequence "gesture_transition_relaxed_stimulated_walkspine"
 $declaresequence "gesture_transition_relaxed_stimulated_walkarms"
 $declaresequence "gesture_transition_relaxed_stimulated_walk"
+
 $declaresequence "Idle_Angry_Shotgun"
+// $sequence "Idle_Angry_Shotgun" "male_shared_anims\Idle_Angry_Shotgun.smd" {
+	// activity "ACT_IDLE_SHOTGUN" 1
+	// node "standing"
+	// loop
+	// cmdlist lockfeetandlefthand
+// }
+
+$sequence "Idle_Shotgun_Aim" "alyx_animations_ep2\Idle_Angry_Shotgun.smd" {
+	activity "ACT_IDLE_ANGRY_SHOTGUN" 1
+	numframes 30
+	addlayer "layer_alyx_Aim_all"
+	node "shooting"
+	loop
+	cmdlist lockfeetandlefthand
+}
+
 $declaresequence "layer_alyx_Aim_all"
 $declaresequence "layer_runAim_all"
 $declaresequence "gesture_shoot_shotgun"

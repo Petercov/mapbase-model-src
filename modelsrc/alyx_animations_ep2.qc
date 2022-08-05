@@ -1,12 +1,16 @@
 
 $modelname "Alyx_animations.mdl"
 
+// Automatically tries to convert any non-female animations to the female skeleton
+$lockbonelengths
+
 // Must be included
 $include "BaseModel.qci"
-$include "hl2mp_ported_anims/commonbones_female.qci"
+//$include "hl2mp_ported_anims/commonbones_female.qci"
 $include "hl2mp_ported_anims/weaponmacros.qci"
 
 $includemodel "alyx_animations_original.mdl"
+$include "alyx_animations_ep2_bone.qci"
 $include "alyx_animations_ep2_DeclareSequence.qci"
 
 // ================================================================

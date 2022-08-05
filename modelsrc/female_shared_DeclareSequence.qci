@@ -93,7 +93,16 @@ $declaresequence "base_cit_medic_anim"
 $declaresequence "base_cit_medic_postanim"
 $declaresequence "silo_sit"
 $declaresequence "Idle_Angry_SMG1"
-$declaresequence "Idle_Angry_Shotgun"
+
+//$declaresequence "Idle_Angry_Shotgun"
+$sequence "Idle_Angry_Shotgun" "male_shared_anims\Idle_Angry_Shotgun.smd" {
+	activity "ACT_IDLE_SHOTGUN" 1
+	//addlayer "shotgun_layer"
+	node "standing"
+	loop
+	cmdlist lockfeetandlefthand
+}
+
 $declaresequence "Idle_SMG1_Aim"
 $declaresequence "Idle_SMG1_Aim_Alert"
 $declaresequence "idle_angry_Ar2"
@@ -115,6 +124,15 @@ $sequence "idle_ar2_aim" {
 	ikrule "rfoot" footstep
 	ikrule "lhand" touch "ValveBiped.Bip01_R_Hand"
 	ikrule "rhand" release
+}
+
+$sequence "Idle_Shotgun_Aim" "alyx_animations_ep2\Idle_Angry_Shotgun.smd" {
+	activity "ACT_IDLE_ANGRY_SHOTGUN" 1
+	numframes 30
+	addlayer "layer_Aim_all"
+	node "shooting"
+	loop
+	cmdlist lockfeetandlefthand
 }
 
 $declaresequence "shoot_smg1"
