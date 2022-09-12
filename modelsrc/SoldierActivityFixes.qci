@@ -62,8 +62,8 @@ $append shootAR2alt {
 
 // NEW -- Shotgun cocking sounds
 // TODO: Is it a little extreme to add a new sound to an animation as frequent as this?
-$append shootSGs { { event AE_CL_PLAYSOUND 11 "Weapon_Alyx_Shotgun.Cock" } }
-$append shootSGc { { event AE_CL_PLAYSOUND 11 "Weapon_Alyx_Shotgun.Cock" } }
+$append shootSGs { { event AE_WPN_PLAYWPNSOUND 11 "pump_npc" } }
+$append shootSGc { { event AE_WPN_PLAYWPNSOUND 11 "pump_npc" } }
 
 // ----------------------------------------------------------------
 

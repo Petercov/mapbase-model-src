@@ -222,7 +222,7 @@ $declaresequence "shoot_ar2_alt"
 $sequence "shoot_shotgun" {
 	"female_shared_anims\shoot_shotgun.smd"
 	activity "ACT_RANGE_ATTACK_SHOTGUN" 1
-	{ event AE_CL_PLAYSOUND 11 "Weapon_Alyx_Shotgun.Cock" }
+	{ event AE_WPN_PLAYWPNSOUND 11 "pump_npc" }
 	addlayer "shotgun_layer"
 	addlayer "layer_Aim_all"
 	node "shooting"
@@ -240,7 +240,7 @@ $sequence "reload_shotgun1" {
 	"male_shared_anims\reload_shotgun1.smd"
 	activity "ACT_RELOAD_SHOTGUN" 1
 	{ event 3015 29 "" }
-	{ event AE_CL_PLAYSOUND 57 "Weapon_Shotgun.Special1" }
+	{ event AE_WPN_PLAYWPNSOUND 57 "pump_npc" }
 	//blendlayer "Idle_Angry_Shotgun" 0 0 0 10 spline
 	//blendlayer "Idle_Angry_Shotgun" 59 75 75 75 spline
 	node "standing"
@@ -278,7 +278,7 @@ $makeweapongesture "gesture_reload_shotgun" "male_shared_anims\reload_shotgun1.s
 $append "gesture_reload_shotgun" {
 	activity "ACT_GESTURE_RELOAD_SHOTGUN" 1
 	{ event 3015 29 "" }
-	{ event AE_CL_PLAYSOUND 57 "Weapon_Shotgun.Special1" }
+	{ event AE_WPN_PLAYWPNSOUND 57 "pump_npc" }
 }
 
 $declaresequence "gesture_shoot_ar2"
@@ -318,7 +318,7 @@ $declaresequence "crouch_reload_smg1"
 $sequence "crouch_shoot_shotgun" {
 	"male_shared_anims\crouch_aim_smg1.smd"
 	activity "ACT_RANGE_ATTACK_SHOTGUN_LOW" 1
-	{ event AE_CL_PLAYSOUND 11 "Weapon_Alyx_Shotgun.Cock" }
+	{ event AE_WPN_PLAYWPNSOUND 11 "pump_npc" }
 	numframes 45
 	addlayer "gesture_shoot_shotgun"
 	addlayer "layer_Aim_all"
@@ -334,7 +334,7 @@ $sequence "crouch_reload_shotgun" {
 	"male_shared_anims\Crouch_idleD.smd"
 	activity "ACT_RELOAD_SHOTGUN_LOW" -1
 	{ event 3015 29 "" }
-	{ event AE_CL_PLAYSOUND 57 "Weapon_Shotgun.Special1" }
+	{ event AE_WPN_PLAYWPNSOUND 57 "pump_npc" }
 	numframes 75
 	addlayer "gesture_reload_shotgun"
 	node "crouching"

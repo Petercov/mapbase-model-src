@@ -48,8 +48,8 @@ $sequence "Idle_Shotgun_Aim" "Idle_SMG1_Aim.smd" activity "ACT_IDLE_ANGRY_SHOTGU
 
 // ----------------------------------------------------------------
 // Overwritten shotgun anims
-$sequence "gesture_shoot_shotgun" "..\male_shared_anims\shoot_shotgun.smd" { event AE_CL_PLAYSOUND 11 "Weapon_Alyx_Shotgun.Cock" } activity "ACT_GESTURE_RANGE_ATTACK_SHOTGUN" 1 delta subtract "gesture_shoot_shotgun" 0
-$GenericShootFromIdle_NoHandIK "shoot_shotgun" "Idle_SMG1_Aim.smd" "ACT_RANGE_ATTACK_SHOTGUN" "layer_Aim_all" "gesture_shoot_shotgun" 45 { event AE_CL_PLAYSOUND 11 "Weapon_Alyx_Shotgun.Cock" }
+$sequence "gesture_shoot_shotgun" "..\male_shared_anims\shoot_shotgun.smd" { event AE_WPN_PLAYWPNSOUND 11 "pump_npc" } activity "ACT_GESTURE_RANGE_ATTACK_SHOTGUN" 1 delta subtract "gesture_shoot_shotgun" 0
+$GenericShootFromIdle_NoHandIK "shoot_shotgun" "Idle_SMG1_Aim.smd" "ACT_RANGE_ATTACK_SHOTGUN" "layer_Aim_all" "gesture_shoot_shotgun" 45 { event AE_WPN_PLAYWPNSOUND 11 "pump_npc" }
 // ----------------------------------------------------------------
 // New annabelle versions
 $sequence "shoot_annabelle" "shoot_shotgun.smd" activity "ACT_RANGE_ATTACK_ANNABELLE" 1 addlayer "layer_Aim_all" node "shooting"

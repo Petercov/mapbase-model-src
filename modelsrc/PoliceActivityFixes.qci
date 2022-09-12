@@ -67,7 +67,7 @@ $GenericCombatIdle "shotgunangryidle1" "police_animations_anims\custom\shotgunan
 //$GenericShootFromIdle_NoHandIK "shoot_shotgun" "police_animations_anims\custom\shotgunangryidle1.smd" "ACT_RANGE_ATTACK_SHOTGUN" "soldier_Aim_9_directions" "gesture_shoot_shotgun" 45
 $GenericShoot "shoot_shotgun" "police_animations_anims\custom\shoot_shotgun.smd" "ACT_RANGE_ATTACK_SHOTGUN" "soldier_Aim_9_directions"
 
-$append "shoot_shotgun" { { event AE_CL_PLAYSOUND 11 "Weapon_Alyx_Shotgun.Cock" } numframes 45 }
+$append "shoot_shotgun" { { event AE_WPN_PLAYWPNSOUND 11 "pump_npc" } numframes 45 }
 
 // Hand-corrected custom cover animations
 $GenericShootFromIdle "lowcover_shoot_ar2" "police_animations_anims\custom\lowcover_aim_ar2.smd" "ACT_RANGE_ATTACK_AR2_MED" "soldier_Aim_9_directions" "gesture_shoot_smg1" 3 // ACT_RANGE_ATTACK_SMG1_LOW
@@ -110,7 +110,7 @@ $weightlist "NoHeadMovement" { "ValveBiped.Bip01_Head1" 0 "ValveBiped.Bip01_Neck
 $makeweapongesture "gesture_shoot_shotgun" "police_animations_anims\custom\shoot_shotgun.smd" 9 20 30
 
 // This should be replaced later
-$sequence "gesture_shoot_shotgun_crouch" "combine_soldier_anims_anims\a_shootShotgun" { weightlist "NoHeadMovement" delta hidden { event AE_CL_PLAYSOUND 11 "Weapon_Alyx_Shotgun.Cock" } }
+$sequence "gesture_shoot_shotgun_crouch" "combine_soldier_anims_anims\a_shootShotgun" { weightlist "NoHeadMovement" delta hidden { event AE_WPN_PLAYWPNSOUND 11 "pump_npc" } }
 
 // ----------------------------------------------------------------
 
@@ -118,13 +118,13 @@ $makeweapongesture "gesture_reload_shotgun" "male_shared_anims\reload_shotgun1.s
 $append "gesture_reload_shotgun" {
 	activity "ACT_GESTURE_RELOAD_SHOTGUN" 1
 	{ event 3015 29 "" }
-	{ event AE_CL_PLAYSOUND 57 "Weapon_Shotgun.Special1" }
+	{ event AE_WPN_PLAYWPNSOUND 57 "pump_npc" }
 }
 
 $GenericReloadFromIdle "reload_shotgun1" "police_animations_anims\custom\shotgunangryidle1.smd" "ACT_RELOAD_SHOTGUN" "soldier_Aim_9_directions" "gesture_reload_shotgun" 10 55 65 22
 $GenericReloadFromIdle "crouch_reload_shotgun1" "police_animations_anims\crouch_reload_smg1.smd" "ACT_RELOAD_SHOTGUN_LOW" "soldier_Aim_9_directions" "gesture_reload_shotgun" 10 55 65 22
-$append "reload_shotgun1" { { event AE_CL_PLAYSOUND 57 "Weapon_Shotgun.Special1" } }
-$append "crouch_reload_shotgun1" { { event AE_CL_PLAYSOUND 57 "Weapon_Shotgun.Special1" } }
+$append "reload_shotgun1" { { event AE_WPN_PLAYWPNSOUND 57 "pump_npc" } }
+$append "crouch_reload_shotgun1" { { event AE_WPN_PLAYWPNSOUND 57 "pump_npc" } }
 
 // ----------------------------------------------------------------
 
@@ -149,10 +149,10 @@ $GenericShootFromIdle "crouch_shoot_shotgun" "police_animations_anims\custom\cro
 
 // ----------------------------------------------------------------
 
-$append "lowcover_shoot_shotgun" { { event AE_CL_PLAYSOUND 11 "Weapon_Alyx_Shotgun.Cock" } }
-$append "crouch_shoot_shotgun" { { event AE_CL_PLAYSOUND 11 "Weapon_Alyx_Shotgun.Cock" } }
-$append "gesture_shoot_shotgun" { { event AE_CL_PLAYSOUND 11 "Weapon_Alyx_Shotgun.Cock" } activity "ACT_GESTURE_RANGE_ATTACK_SHOTGUN" 1 }
-$append "gesture_shoot_shotgun_crouch" { { event AE_CL_PLAYSOUND 11 "Weapon_Alyx_Shotgun.Cock" } }
+$append "lowcover_shoot_shotgun" { { event AE_WPN_PLAYWPNSOUND 11 "pump_npc" } }
+$append "crouch_shoot_shotgun" { { event AE_WPN_PLAYWPNSOUND 11 "pump_npc" } }
+$append "gesture_shoot_shotgun" { { event AE_WPN_PLAYWPNSOUND 11 "pump_npc" } activity "ACT_GESTURE_RANGE_ATTACK_SHOTGUN" 1 }
+$append "gesture_shoot_shotgun_crouch" { { event AE_WPN_PLAYWPNSOUND 11 "pump_npc" } }
 
 // ----------------------------------------------------------------
 // 
