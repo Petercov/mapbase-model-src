@@ -30,16 +30,16 @@ $sequence apcride_R_gun_fire_layer {
 	fps 45
 }
 
-$animation a_apcride_R_Aim_all_neutral "APCRide_anims\apc_idle_aim" frame 0 0
-$animation a_apcride_R_Aim_all_down_left "APCRide_anims\apc_idle_aim" frame 8 8 subtract a_apcride_R_Aim_all_neutral 0
-$animation a_apcride_R_Aim_all_down_center "APCRide_anims\apc_idle_aim" frame 2 2 subtract a_apcride_R_Aim_all_neutral 0
-$animation a_apcride_R_Aim_all_down_right "APCRide_anims\apc_idle_aim" frame 3 3 subtract a_apcride_R_Aim_all_neutral 0
-$animation a_apcride_R_Aim_all_mid_left "APCRide_anims\apc_idle_aim" frame 6 6 subtract a_apcride_R_Aim_all_neutral 0
-$animation a_apcride_R_Aim_all_mid_center "APCRide_anims\apc_idle_aim" frame 0 0 subtract a_apcride_R_Aim_all_neutral 0
-$animation a_apcride_R_Aim_all_mid_right "APCRide_anims\apc_idle_aim" frame 4 4 subtract a_apcride_R_Aim_all_neutral 0
-$animation a_apcride_R_Aim_all_up_left "APCRide_anims\apc_idle_aim" frame 7 7 subtract a_apcride_R_Aim_all_neutral 0
-$animation a_apcride_R_Aim_all_up_center "APCRide_anims\apc_idle_aim" frame 1 1 subtract a_apcride_R_Aim_all_neutral 0
-$animation a_apcride_R_Aim_all_up_right "APCRide_anims\apc_idle_aim" frame 5 5 subtract a_apcride_R_Aim_all_neutral 0
+$animation a_apcride_R_Aim_all_neutral "APCRide_anims\apc_idle_aim" frame 0 0 origin 0 0 49
+$animation a_apcride_R_Aim_all_down_left "APCRide_anims\apc_idle_aim" frame 8 8 subtract a_apcride_R_Aim_all_neutral 0 origin 0 0 49
+$animation a_apcride_R_Aim_all_down_center "APCRide_anims\apc_idle_aim" frame 2 2 subtract a_apcride_R_Aim_all_neutral 0 origin 0 0 49
+$animation a_apcride_R_Aim_all_down_right "APCRide_anims\apc_idle_aim" frame 3 3 subtract a_apcride_R_Aim_all_neutral 0 origin 0 0 49
+$animation a_apcride_R_Aim_all_mid_left "APCRide_anims\apc_idle_aim" frame 6 6 subtract a_apcride_R_Aim_all_neutral 0 origin 0 0 49
+$animation a_apcride_R_Aim_all_mid_center "APCRide_anims\apc_idle_aim" frame 0 0 subtract a_apcride_R_Aim_all_neutral 0 origin 0 0 49
+$animation a_apcride_R_Aim_all_mid_right "APCRide_anims\apc_idle_aim" frame 4 4 subtract a_apcride_R_Aim_all_neutral 0 origin 0 0 49
+$animation a_apcride_R_Aim_all_up_left "APCRide_anims\apc_idle_aim" frame 7 7 subtract a_apcride_R_Aim_all_neutral 0 origin 0 0 49
+$animation a_apcride_R_Aim_all_up_center "APCRide_anims\apc_idle_aim" frame 1 1 subtract a_apcride_R_Aim_all_neutral 0 origin 0 0 49
+$animation a_apcride_R_Aim_all_up_right "APCRide_anims\apc_idle_aim" frame 5 5 subtract a_apcride_R_Aim_all_neutral 0 origin 0 0 49
 $sequence apcride_R_Aim_all {
 	a_apcride_R_Aim_all_up_right a_apcride_R_Aim_all_up_center a_apcride_R_Aim_all_up_left
 	a_apcride_R_Aim_all_mid_right a_apcride_R_Aim_all_mid_center a_apcride_R_Aim_all_mid_left
@@ -56,10 +56,10 @@ $sequence apcride_R_Aim_all {
 	iklock lhand 1 0.5
 }
 
-$animation a_apcride_R_lean_all_neutral "APCRide_anims\police_apc_leaning" frame 0 0
-$animation a_apcride_R_lean_all_right "APCRide_anims\police_apc_leaning" frame 1 1 subtract a_apcride_R_lean_all_neutral 0
-$animation a_apcride_R_lean_all_center "APCRide_anims\police_apc_leaning" frame 0 0 subtract a_apcride_R_lean_all_neutral 0
-$animation a_apcride_R_lean_all_left "APCRide_anims\police_apc_leaning" frame 2 2 subtract a_apcride_R_lean_all_neutral 0
+$animation a_apcride_R_lean_all_neutral "APCRide_anims\police_apc_leaning" frame 0 0 origin 0 0 49
+$animation a_apcride_R_lean_all_right "APCRide_anims\police_apc_leaning" frame 1 1 subtract a_apcride_R_lean_all_neutral 0 origin 0 0 49
+$animation a_apcride_R_lean_all_center "APCRide_anims\police_apc_leaning" frame 0 0 subtract a_apcride_R_lean_all_neutral 0 origin 0 0 49
+$animation a_apcride_R_lean_all_left "APCRide_anims\police_apc_leaning" frame 2 2 subtract a_apcride_R_lean_all_neutral 0 origin 0 0 49
 $sequence apcride_R_lean_all {
 	a_apcride_R_lean_all_right a_apcride_R_lean_all_center a_apcride_R_lean_all_left
 	blend "vehicle_lean" -1 1
@@ -72,6 +72,7 @@ $sequence apcride_R_lean_all {
 }
 
 $animation a_apcride_R_jump_land_ref "police_animations_anims\jump_holding_land"
+$animation a_apcride_R_jump_land_ref2 "police_animations_anims\jump_holding_land" origin 0 0 -49
 
 $sequence apcride_R_idle {
 	"APCRide_anims\RideApcIdle"
@@ -80,6 +81,7 @@ $sequence apcride_R_idle {
 	node apcride_R
 	addlayer apcride_R_lean_all
 	addlayer apcride_R_Hand_Layer
+	origin 0 0 49
 }
 
 $sequence apcride_R_exit1 {
@@ -90,8 +92,9 @@ $sequence apcride_R_exit1 {
 	ikrule "rfoot" footstep contact 15 range 13 15 43 43
 	
 	alignto "apcride_R_idle"
-	walkframe 15 LY
-	walkalignto 40 "a_apcride_R_jump_land_ref" LX LY
+	walkframe 16 LY LZ
+	walkalignto 40 "a_apcride_R_jump_land_ref2" LX LY
+	origin 0 0 49
 }
 
 $sequence apcride_R_enter1 {
@@ -99,7 +102,7 @@ $sequence apcride_R_enter1 {
 	fps 30
 	
 	align "a_apcride_R_jump_land_ref" X Y Z XR YR ZR 28 0
-	walkalignto 50 "apcride_R_idle" LX LY LZR
+	walkalignto 50 "apcride_R_idle" LX LY LZ LZR
 	blendlayer "apcride_R_Hand_Layer" 30 36 50 50 spline xfade
 	ikrule "lfoot" footstep contact 1 range 0 0 15 18
 	ikrule "rfoot" footstep contact 0 range 0 0 1 3
@@ -123,4 +126,5 @@ $sequence apcride_R_gun_fire {
 	blendlayer "apcride_R_gun_fire_layer" 0 1 30 31 spline
 	node apcride_R_shooting
 	numframes 31
+	origin 0 0 49
 }

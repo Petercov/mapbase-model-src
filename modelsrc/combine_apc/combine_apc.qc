@@ -32,8 +32,8 @@ $Attachment "wheel_fr" "APC.Wheel_FR_Rotate" 0 0 0 rotate 0 0 0
 $Attachment "wheel_rl" "APC.Wheel_RL_Rotate" 0 0 0 rotate 0 0 0
 $Attachment "wheel_rr" "APC.Wheel_RR_Rotate" 0 0 0 rotate 0 0 0
 $Attachment "vehicle_engine" "APC.Frame" 0 0 50 rotate 0 0 0
-$attachment "vehicle_feet_passenger1" "APC.Frame" -40.00 -61.72 -0.74 rotate -90 -90 0
-//$attachment "vehicle_feet_passenger1" "APC.Frame" -40.00 -12.72 -0.74 rotate -90 -90 0
+//$attachment "vehicle_feet_passenger1" "APC.Frame" -40.00 -61.72 -0.74 rotate -90 -90 0
+$attachment "vehicle_feet_passenger1" "APC.Frame" -40.00 -12.72 -0.74 rotate -90 -90 0
 
 $Include "combine_apc_box.qci"
 
