@@ -4,11 +4,16 @@
 // 
 // ================================================================
 
+	// { event AE_CL_PLAYSOUND 10 "Weapon_357.OpenLoader" } \\
+	// { event AE_CL_PLAYSOUND 17 "Weapon_357.RemoveLoader" } \\
+	// { event AE_CL_PLAYSOUND 37 "Weapon_357.ReplaceLoader" } \\
+	// { event AE_CL_PLAYSOUND 47 "Weapon_357.Spin" } \\
+
 $definemacro 357ReloadSounds \\
-	{ event AE_CL_PLAYSOUND 10 "Weapon_357.OpenLoader" } \\
-	{ event AE_CL_PLAYSOUND 17 "Weapon_357.RemoveLoader" } \\
-	{ event AE_CL_PLAYSOUND 37 "Weapon_357.ReplaceLoader" } \\
-	{ event AE_CL_PLAYSOUND 47 "Weapon_357.Spin" } \\ // TODO: Not really a spin
+	{ event AE_WPN_PLAYWPNSOUND 10 "special2" } \\
+	{ event AE_WPN_PLAYWPNSOUND 17 "special3" } \\
+	{ event 3017 37 "" } \\
+	{ event AE_WPN_PLAYWPNSOUND 47 "pump_npc" } \\ // TODO: Not really a spin
 
 $weightlist "weights_357_shoot" {
 	 "ValveBiped.Bip01_Pelvis" 3

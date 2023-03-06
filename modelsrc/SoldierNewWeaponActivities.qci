@@ -46,15 +46,25 @@ $append "reload_smg1_low" { blendlayer "crouch_aim_sm1" 0 0 0 4 blendlayer "crou
 $makeweapongesture "gesture_reload_shotgun" "male_shared_anims\reload_shotgun1.smd" 14 35 75
 $append "gesture_reload_shotgun" {
 	activity "ACT_GESTURE_RELOAD_SHOTGUN" 1
-	{ event 3015 29 "" }
+	{ event 3017 23 "" }
+	{ event 3017 29 "" }
+	{ event 3015 33 "" }
 	{ event AE_WPN_PLAYWPNSOUND 57 "pump_npc" }
 	fps 38.1 // Needs to be the same duration as the existing soldier gesture reload
 }
 
-$GenericReloadFromIdle "reload_shotgun1" "combine_soldier_anims_anims\reload.smd" "ACT_RELOAD_SHOTGUN" "Aim_stand_delta_all" "gesture_reload_shotgun" 10 55 65 22
-$GenericReloadFromIdle "reload_shotgun1_low" "combine_soldier_anims_anims\reload_low.smd" "ACT_RELOAD_SHOTGUN_LOW" "Aim_crouch_delta_all" "gesture_reload_shotgun" 10 55 65 22
-$append "reload_shotgun1" { { event AE_WPN_PLAYWPNSOUND 57 "pump_npc" } }
-$append "reload_shotgun1_low" { { event AE_WPN_PLAYWPNSOUND 57 "pump_npc" } }
+$GenericReloadFromIdle "reload_shotgun1" "combine_soldier_anims_anims\reload.smd" "ACT_RELOAD_SHOTGUN" "Aim_stand_delta_all" "gesture_reload_shotgun" 10 55 65 33
+$GenericReloadFromIdle "reload_shotgun1_low" "combine_soldier_anims_anims\reload_low.smd" "ACT_RELOAD_SHOTGUN_LOW" "Aim_crouch_delta_all" "gesture_reload_shotgun" 10 55 65 33
+$append "reload_shotgun1" {
+	{ event 3017 23 "" }
+	{ event 3017 29 "" }
+	{ event AE_WPN_PLAYWPNSOUND 57 "pump_npc" }
+}
+$append "reload_shotgun1_low" {
+	{ event 3017 23 "" }
+	{ event 3017 29 "" }
+	{ event AE_WPN_PLAYWPNSOUND 57 "pump_npc" }
+}
 
 //$weightlist "weights_reload_shotgun1_legs" { "ValveBiped.Bip01_Pelvis" 1 "ValveBiped.Bip01_Spine" 0 }
 //

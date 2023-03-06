@@ -239,7 +239,9 @@ $declaresequence "reload_smg1"
 $sequence "reload_shotgun1" {
 	"male_shared_anims\reload_shotgun1.smd"
 	activity "ACT_RELOAD_SHOTGUN" 1
-	{ event 3015 29 "" }
+	{ event 3017 23 "" }
+	{ event 3017 29 "" }
+	{ event 3015 33 "" }
 	{ event AE_WPN_PLAYWPNSOUND 57 "pump_npc" }
 	//blendlayer "Idle_Angry_Shotgun" 0 0 0 10 spline
 	//blendlayer "Idle_Angry_Shotgun" 59 75 75 75 spline
@@ -277,7 +279,9 @@ $declaresequence "gesture_reload_ar2"
 $makeweapongesture "gesture_reload_shotgun" "male_shared_anims\reload_shotgun1.smd" 10 60 75
 $append "gesture_reload_shotgun" {
 	activity "ACT_GESTURE_RELOAD_SHOTGUN" 1
-	{ event 3015 29 "" }
+	{ event 3017 23 "" }
+	{ event 3017 29 "" }
+	{ event 3015 33 "" }
 	{ event AE_WPN_PLAYWPNSOUND 57 "pump_npc" }
 }
 
@@ -333,7 +337,9 @@ $sequence "crouch_shoot_shotgun" {
 $sequence "crouch_reload_shotgun" {
 	"male_shared_anims\Crouch_idleD.smd"
 	activity "ACT_RELOAD_SHOTGUN_LOW" -1
-	{ event 3015 29 "" }
+	{ event 3017 23 "" }
+	{ event 3017 29 "" }
+	{ event 3015 33 "" }
 	{ event AE_WPN_PLAYWPNSOUND 57 "pump_npc" }
 	numframes 75
 	addlayer "gesture_reload_shotgun"
