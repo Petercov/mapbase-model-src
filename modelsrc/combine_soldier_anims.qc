@@ -17,6 +17,7 @@ $definebone "ValveBiped.Cod" "ValveBiped.Bip01_Pelvis" -0.044717 2.313936 4.6614
 $include "SoldierMoveAnims.qci"
 
 $includemodel "combine_soldier_anims_original.mdl"
+$includemodel "minigun_animations.mdl"
 $include "combine_soldier_anims_DeclareSequence.qci"
 $include "SoldierActivityFixes.qci"
 $include "SoldierNewWeaponActivities.qci"

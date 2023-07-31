@@ -17,6 +17,7 @@ $include "GenericAnimationMacros.qci"
 $include "MaleCitizenMoveAnims.qci"
 
 $includemodel "humans/male_shared_original.mdl"
+$includemodel "minigun_animations.mdl"
 $include "male_shared_DeclareSequence.qci"
 
 $sequence reference "male_shared_anims\ragdoll"

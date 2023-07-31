@@ -18,6 +18,7 @@ $include "GenericAnimationMacros.qci"
 $include "FemaleCitizenMoveAnims.qci"
 
 $includemodel "humans/female_shared_original.mdl"
+$includemodel "minigun_female_animations.mdl"
 $include "female_shared_DeclareSequence.qci"
 
 $pushd "female_shared_anims"

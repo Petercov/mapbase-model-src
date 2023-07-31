@@ -19,6 +19,7 @@ $include "GenericAnimationMacros.qci"
 $include "PoliceMoveAnims.qci"
 
 $includemodel "police_female_animations_original.mdl"
+$includemodel "minigun_female_animations.mdl"
 $include "police_female_animations_DeclareSequence.qci"
 $include "PoliceActivityFixes.qci"
 $include "PoliceReadinessAnims.qci"
