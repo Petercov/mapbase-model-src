@@ -193,3 +193,28 @@ $sequence "RunUnarmed_all" {
 $include "SoldierNewWeaponActivities_AR1.qci"
 $include "SoldierNewWeaponActivities_SMG2.qci"
 $include "SoldierNewWeaponActivities_SniperRifle.qci"
+
+// ----------------------------------------------------------------
+
+$GenericShoot "shootASGs" "sintekgrunt_anims_anims\shootSGs.smd" "ACT_RANGE_ATTACK_AUTOSHOTGUN" "Aim_stand_delta_all"
+
+$Animation "a_shootAutoShotgun_corrective_animation" "sintekgrunt_anims_anims\a_shootShotgun_corrective_animation.smd" {
+}
+
+$Animation "a_shootAutoShotgun" "sintekgrunt_anims_anims\a_shootShotgun.smd" {
+	fps 30
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_shootAutoShotgun_corrective_animation" 0
+}
+
+$Sequence "gesture_shoot_autoshotgun" {
+	"a_shootAutoShotgun"
+	activity "ACT_GESTURE_RANGE_ATTACK_AUTOSHOTGUN" 1
+	delta
+	fadein 0.2
+	fadeout 0.2
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+}
+
+$GenericShootFromIdle "shootASGc" "combine_soldier_anims_anims\custom\crouch_aim_sg_fromshoot.smd" ACT_RANGE_ATTACK_AUTOSHOTGUN_LOW "Aim_crouch_delta_all" "gesture_shoot_autoshotgun" 5 fps 30
