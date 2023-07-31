@@ -29,25 +29,25 @@ $GenericIdle "Idle_SMG2_Relaxed" "custom\Idle_SMG2_Relaxed.smd" "ACT_NEUTRAL_SMG
 
 // ----------------------------------------------------------------
 
-$GenericIdleHands "Idle_Relaxed_SMG2_1" "Idle_Relaxed_SMG1_1.smd" "ACT_IDLE_SMG2_RELAXED" "relaxed_smg1_to_smg2"
-$GenericIdleHands "Idle_Relaxed_SMG2_2" "Idle_Relaxed_SMG1_2.smd" "ACT_IDLE_SMG2_RELAXED" "relaxed_smg1_to_smg2"
-$GenericIdleHands "Idle_Relaxed_SMG2_3" "Idle_Relaxed_SMG1_3.smd" "ACT_IDLE_SMG2_RELAXED" "relaxed_smg1_to_smg2"
-$GenericIdleHands "Idle_Relaxed_SMG2_4" "Idle_Relaxed_SMG1_4.smd" "ACT_IDLE_SMG2_RELAXED" "relaxed_smg1_to_smg2"
-$GenericIdleHands "Idle_Relaxed_SMG2_5" "Idle_Relaxed_SMG1_5.smd" "ACT_IDLE_SMG2_RELAXED" "relaxed_smg1_to_smg2"
-$GenericIdleHands "Idle_Relaxed_SMG2_6" "Idle_Relaxed_SMG1_6.smd" "ACT_IDLE_SMG2_RELAXED" "relaxed_smg1_to_smg2"
-//$GenericIdleHands "Idle_Relaxed_SMG2_7" "Idle_Relaxed_SMG1_7.smd" "ACT_IDLE_SMG2_RELAXED" "relaxed_smg1_to_smg2"
-//$GenericIdleHands "Idle_Relaxed_SMG2_8" "Idle_Relaxed_SMG1_8.smd" "ACT_IDLE_SMG2_RELAXED" "relaxed_smg1_to_smg2"
-//$GenericIdleHands "Idle_Relaxed_SMG2_9" "Idle_Relaxed_SMG1_9.smd" "ACT_IDLE_SMG2_RELAXED" "relaxed_smg2_full_arms"
+$ReadinessIdleHands "Idle_Relaxed_SMG2_1" "Idle_Relaxed_SMG1_1.smd" "ACT_IDLE_SMG2_RELAXED" "relaxed_smg1_to_smg2"
+$ReadinessIdleHands "Idle_Relaxed_SMG2_2" "Idle_Relaxed_SMG1_2.smd" "ACT_IDLE_SMG2_RELAXED" "relaxed_smg1_to_smg2"
+$ReadinessIdleHands "Idle_Relaxed_SMG2_3" "Idle_Relaxed_SMG1_3.smd" "ACT_IDLE_SMG2_RELAXED" "relaxed_smg1_to_smg2"
+$ReadinessIdleHands "Idle_Relaxed_SMG2_4" "Idle_Relaxed_SMG1_4.smd" "ACT_IDLE_SMG2_RELAXED" "relaxed_smg1_to_smg2"
+$ReadinessIdleHands "Idle_Relaxed_SMG2_5" "Idle_Relaxed_SMG1_5.smd" "ACT_IDLE_SMG2_RELAXED" "relaxed_smg1_to_smg2"
+$ReadinessIdleHands "Idle_Relaxed_SMG2_6" "Idle_Relaxed_SMG1_6.smd" "ACT_IDLE_SMG2_RELAXED" "relaxed_smg1_to_smg2"
+//$ReadinessIdleHands "Idle_Relaxed_SMG2_7" "Idle_Relaxed_SMG1_7.smd" "ACT_IDLE_SMG2_RELAXED" "relaxed_smg1_to_smg2"
+//$ReadinessIdleHands "Idle_Relaxed_SMG2_8" "Idle_Relaxed_SMG1_8.smd" "ACT_IDLE_SMG2_RELAXED" "relaxed_smg1_to_smg2"
+//$ReadinessIdleHands "Idle_Relaxed_SMG2_9" "Idle_Relaxed_SMG1_9.smd" "ACT_IDLE_SMG2_RELAXED" "relaxed_smg2_full_arms"
 
-$GenericIdleHands "Idle_Alert_SMG2_1" "Idle_Alert_SMG1_1.smd" "ACT_IDLE_SMG2_STIMULATED" "relaxed_smg1_to_smg2"
-$GenericIdleHands "Idle_Alert_SMG2_2" "Idle_Alert_SMG1_2.smd" "ACT_IDLE_SMG2_STIMULATED" "relaxed_smg1_to_smg2"
-$GenericIdleHands "Idle_Alert_SMG2_3" "Idle_Alert_SMG1_3.smd" "ACT_IDLE_SMG2_STIMULATED" "relaxed_smg1_to_smg2"
-$GenericIdleHands "Idle_Alert_SMG2_4" "Idle_Alert_SMG1_4.smd" "ACT_IDLE_SMG2_STIMULATED" "relaxed_smg1_to_smg2"
-$GenericIdleHands "Idle_Alert_SMG2_5" "Idle_Alert_SMG1_5.smd" "ACT_IDLE_SMG2_STIMULATED" "relaxed_smg2_full_arms"
-$GenericIdleHands "Idle_Alert_SMG2_6" "Idle_Alert_SMG1_6.smd" "ACT_IDLE_SMG2_STIMULATED" "relaxed_smg1_to_smg2"
-//$GenericIdleHands "Idle_Alert_SMG2_7" "Idle_Alert_SMG1_7.smd" "ACT_IDLE_SMG2_STIMULATED" "relaxed_smg1_to_smg2"
-//$GenericIdleHands "Idle_Alert_SMG2_8" "Idle_Alert_SMG1_8.smd" "ACT_IDLE_SMG2_STIMULATED" "relaxed_smg2_full_arms"
-//$GenericIdleHands "Idle_Alert_SMG2_9" "Idle_Alert_SMG1_9.smd" "ACT_IDLE_SMG2_STIMULATED" "relaxed_smg2_full_arms"
+$ReadinessIdleHands "Idle_Alert_SMG2_1" "Idle_Alert_SMG1_1.smd" "ACT_IDLE_SMG2_STIMULATED" "relaxed_smg1_to_smg2"
+$ReadinessIdleHands "Idle_Alert_SMG2_2" "Idle_Alert_SMG1_2.smd" "ACT_IDLE_SMG2_STIMULATED" "relaxed_smg1_to_smg2"
+$ReadinessIdleHands "Idle_Alert_SMG2_3" "Idle_Alert_SMG1_3.smd" "ACT_IDLE_SMG2_STIMULATED" "relaxed_smg1_to_smg2"
+$ReadinessIdleHands "Idle_Alert_SMG2_4" "Idle_Alert_SMG1_4.smd" "ACT_IDLE_SMG2_STIMULATED" "relaxed_smg1_to_smg2"
+$ReadinessIdleHands "Idle_Alert_SMG2_5" "Idle_Alert_SMG1_5.smd" "ACT_IDLE_SMG2_STIMULATED" "relaxed_smg2_full_arms"
+$ReadinessIdleHands "Idle_Alert_SMG2_6" "Idle_Alert_SMG1_6.smd" "ACT_IDLE_SMG2_STIMULATED" "relaxed_smg1_to_smg2"
+//$ReadinessIdleHands "Idle_Alert_SMG2_7" "Idle_Alert_SMG1_7.smd" "ACT_IDLE_SMG2_STIMULATED" "relaxed_smg1_to_smg2"
+//$ReadinessIdleHands "Idle_Alert_SMG2_8" "Idle_Alert_SMG1_8.smd" "ACT_IDLE_SMG2_STIMULATED" "relaxed_smg2_full_arms"
+//$ReadinessIdleHands "Idle_Alert_SMG2_9" "Idle_Alert_SMG1_9.smd" "ACT_IDLE_SMG2_STIMULATED" "relaxed_smg2_full_arms"
 
 // ----------------------------------------------------------------
 

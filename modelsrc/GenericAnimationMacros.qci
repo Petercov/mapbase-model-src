@@ -23,6 +23,19 @@ $sequence $IdleName$ { $IdleSeq$ activity $IdleAct$ 1 loop \\
 } \\
 $continue $IdleName$	
 
+$definemacro ReadinessIdle IdleName IdleSeq IdleAct \\
+$sequence $IdleName$ { $IdleSeq$ activity $IdleAct$ -1 loop \\
+	cmdlist lockfeetandlefthand \\
+} \\
+$continue $IdleName$	
+
+$definemacro ReadinessIdleHands IdleName IdleSeq IdleAct HandsLayer \\
+$sequence $IdleName$ { $IdleSeq$ activity $IdleAct$ -1 loop \\
+	cmdlist lockfeet \\
+	blendlayer $HandsLayer$ 0 0 0 0 local \\
+} \\
+$continue $IdleName$	
+
 $definemacro GenericCombatIdle IdleName IdleSeq IdleAct AimLayer \\
 $sequence $IdleName$ { \\
 	$IdleSeq$ \\
