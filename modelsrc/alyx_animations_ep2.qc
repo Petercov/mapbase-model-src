@@ -81,3 +81,19 @@ $sequence "Standshoot_to_crouchshoot" {
 	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 25 25 target 0
 	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 25 25 target 1
 }
+
+$KeyValues
+{
+	dynamic_interactions 
+	{
+		"alyx_citizen_handshake"
+		{
+			"origin_relative" "38 0 0"
+			"angles_relative" "0 180 0"
+			"sequence" "Handshake_Alyx_Female"
+			"trigget" "respond_to_hello"
+			"origin_max_delta" "2"
+			"mapbase" "1"
+		}
+	}
+}
