@@ -91,7 +91,7 @@ $KeyValues
 			"origin_relative" "38 0 0"
 			"angles_relative" "0 180 0"
 			"sequence" "Handshake_Alyx_Female"
-			"trigget" "respond_to_hello"
+			"trigger" "respond_to_hello"
 			"origin_max_delta" "2"
 			"mapbase" "1"
 		}
