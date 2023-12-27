@@ -258,6 +258,12 @@ $sequence "luggage_run_all" {
 	node "running"
 }
 
+// ================================================================
+
+$include "ez2_new_citizen_anims.qci"
+
+// ================================================================
+
 $KeyValues
 {
 	dynamic_interactions 
