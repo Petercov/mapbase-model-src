@@ -236,5 +236,6 @@ $KeyValues
 	{
 		$DIKV_Alyx
 		$DIKV_Hand2Hand
+		$DIKV_CopBeatVort
 	}
 }
