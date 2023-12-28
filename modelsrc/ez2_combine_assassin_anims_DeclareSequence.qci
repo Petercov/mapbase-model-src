@@ -148,7 +148,7 @@ $animation "a_shootShotgun" "combine_soldier_anims_anims\a_shootShotgun.smd" {
 $sequence "gesture_shoot_shotgun" {
 	"a_shootShotgun"
 	activity "ACT_GESTURE_RANGE_ATTACK_SHOTGUN" 1
-	{ event AE_CL_PLAYSOUND 11 "Weapon_Alyx_Shotgun.Cock" } // TODO: Is it a little extreme to add a new sound to an animation as frequent as this?
+	{ event AE_WPN_PLAYWPNSOUND 11 "pump_npc" } // TODO: Is it a little extreme to add a new sound to an animation as frequent as this?
 	delta
 	fadein 0.2
 	fadeout 0.2
