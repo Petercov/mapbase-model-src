@@ -1,0 +1,24 @@
+
+$poseparameter "vehicle_steer" -1 1
+
+$sequence drive_pd "gmod/drive_pd" ACT_DRIVE_POD 1 fps 30.00
+
+$origin 0 9.4 -0.7 // XSI offset, positions the player perfectly in the vehicle 0 9.4 -0.7
+
+$animation drive_airboat_left "gmod/drive_airboat_left" { loop LX LY rotateto -1 ikrule "lhand" attachment "Steering_LHand" ikrule "rhand" attachment "Steering_RHand"}
+$animation drive_airboat_right "gmod/drive_airboat_right" { loop LX LY rotateto 1 ikrule "lhand" attachment "Steering_LHand" ikrule "rhand" attachment "Steering_RHand"}
+$animation drive_airboat_center "gmod/drive_airboat" { loop LX LY rotateto 1 ikrule "lhand" attachment "Steering_LHand" ikrule "rhand" attachment "Steering_RHand"}
+
+$sequence drive_airboat { drive_airboat_left drive_airboat_center drive_airboat_right
+                          blendwidth 3 blend vehicle_steer -1 1 ACT_DRIVE_AIRBOAT 1 }
+ 
+$origin 0 8.5 -4 // XSI offset, positions the player perfectly in the vehicle 0 8.5 -4
+
+$animation drive_jeep_left "gmod/drive_jeep_left" { loop LX LY rotateto -1 ikrule "lhand" attachment "Steering_LHand" ikrule "rhand" attachment "Steering_RHand"}
+$animation drive_jeep_right "gmod/drive_jeep_right" { loop LX LY rotateto 1 ikrule "lhand" attachment "Steering_LHand" ikrule "rhand" attachment "Steering_RHand"}
+$animation drive_jeep_center "gmod/drive_jeep" { loop LX LY rotateto 1 ikrule "lhand" attachment "Steering_LHand" ikrule "rhand" attachment "Steering_RHand"}
+
+$sequence drive_jeep { drive_jeep_left drive_jeep_center drive_jeep_right
+                       blendwidth 3 blend vehicle_steer -1 1 ACT_DRIVE_JEEP 1 }
+
+$origin 0 0 0
