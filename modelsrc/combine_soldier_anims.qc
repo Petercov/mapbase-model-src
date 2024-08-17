@@ -2,8 +2,6 @@
 
 $ModelName "combine_soldier_anims.mdl"
 
-//$includemodel "player/male_anims.mdl"
-
 // Must be included
 $include "BaseModel.qci"
 $include "hl2mp_ported_anims/commonbones.qci"
@@ -281,7 +279,7 @@ $sequence $gesturename$ { \\
 $continue $gesturename$	
 
 $makeflinchgesture_rleg "gesture_melee_kick" "police_ss_anims\adoorkick.smd" 7 32 45
-$append gesture_melee_kick { activity "ACT_GESTURE_MELEE_ATTACK2" 1 { event 3 20 "" } fps 40 }
+$append gesture_melee_kick { activity "ACT_GESTURE_MELEE_ATTACK2" 1 { event 3 20 "" } fps 55 iklock lfoot 1 0 }
 
 $include "SoldierCrouchMovement.qci"
 
@@ -315,6 +313,17 @@ $include "SoldierAnimationNodes.qci"
 
 // ================================================================
 
+$include "hl2mp_ported_anims/player_macros.qci"
+
+$sequence reference "hl2mp_ported_anims\ragdoll_pose"
+$include "HL2MPMoveAnims.qci"
+
+$pushd "combine_soldier_anims_anims"
+$include "mapbase_player_include_anims_soldier.qci"
+$popd
+
+// ================================================================
+
 $include "ez2_new_combine_soldier_anims.qci"
 
 // ================================================================
@@ -329,5 +338,17 @@ $KeyValues
 	{
 		$DIKV_Alyx
 		$DIKV_Hand2Hand
+	}
+	playermodel_data
+	{
+		neck_pivot_up			"12"
+		neck_pivot_fwd			"-4"
+		neck_pivot_duck_up		"24"
+		neck_pivot_duck_fwd		"16"
+		
+		bone_transforms
+		{
+			$include "mapbase_player_include_bonetransforms.qci"
+		}
 	}
 }
