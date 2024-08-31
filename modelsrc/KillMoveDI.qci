@@ -128,8 +128,9 @@ $definemacro DIKV_Hand2Hand \\
 		"origin_relative" "58 0 0" \\
 		"angles_relative" "0 180 0" \\
 		"sequence" "killmove_throw_shoulder" \\
-		"recv_sequence" "killmove_throw_shoulder_recv" \\
+		"their_sequence" "killmove_throw_shoulder_recv" \\
 		"delay" "10.0" \\
+		"cqc_enabled" "1" \\
 	} \\
 	"killmove_dropkick_front" \\
 	{ \\
@@ -138,8 +139,10 @@ $definemacro DIKV_Hand2Hand \\
 		"origin_relative" "103 0 0" \\
 		"angles_relative" "0 180 0" \\
 		"sequence" "killmove_dpkick_front" \\
-		"recv_sequence" "killmove_dpkick_recv_front" \\
+		"their_sequence" "killmove_dpkick_recv_front" \\
 		"delay" "10.0" \\
+		"related_interactions" "killmove_dropkick*" \\
+		"cqc_enabled" "1" \\
 	} \\
 	"killmove_dropkick_back" \\
 	{ \\
@@ -148,8 +151,10 @@ $definemacro DIKV_Hand2Hand \\
 		"origin_relative" "113 0 0" \\
 		"angles_relative" "0 0 0" \\
 		"sequence" "killmove_dpkick_front" \\
-		"recv_sequence" "killmove_dpkick_recv_back" \\
+		"their_sequence" "killmove_dpkick_recv_back" \\
 		"delay" "10.0" \\
+		"related_interactions" "killmove_dropkick*" \\
+		"cqc_enabled" "1" \\
 	} \\
 	"killmove_dropkick_left" \\
 	{ \\
@@ -158,8 +163,10 @@ $definemacro DIKV_Hand2Hand \\
 		"origin_relative" "53 0 0" \\
 		"angles_relative" "0 90 0" \\
 		"sequence" "killmove_dpkick_side" \\
-		"recv_sequence" "killmove_dpkick_recv_left" \\
+		"their_sequence" "killmove_dpkick_recv_left" \\
 		"delay" "10.0" \\
+		"related_interactions" "killmove_dropkick*" \\
+		"cqc_enabled" "1" \\
 	} \\
 	"killmove_dropkick_right" \\
 	{ \\
@@ -168,6 +175,8 @@ $definemacro DIKV_Hand2Hand \\
 		"origin_relative" "56 0 0" \\
 		"angles_relative" "0 -90 0" \\
 		"sequence" "killmove_dpkick_side" \\
-		"recv_sequence" "killmove_dpkick_recv_right" \\
+		"their_sequence" "killmove_dpkick_recv_right" \\
 		"delay" "10.0" \\
+		"related_interactions" "killmove_dropkick*" \\
+		"cqc_enabled" "1" \\
 	} \\
