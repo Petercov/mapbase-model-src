@@ -20,9 +20,12 @@ $include "male_shared_DeclareSequence.qci"
 
 $sequence reference "male_shared_anims\ragdoll"
 
+$include "VehicleDriver.qci"
+
 $pushd "male_shared_anims"
 $include "CitizenActivityFixes.qci"
 $include "CitizenNewWeaponActivities.qci"
+$include "VehicleDriver-sin.qci"
 $popd
 
 

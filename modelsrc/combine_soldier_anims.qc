@@ -23,8 +23,11 @@ $include "SoldierTransitions.qci"
 
 $include "SoldierReadinessAnims.qci"
 
+$include "VehicleDriver.qci"
+
 $pushd "male_shared_anims"
 $include "DefaultHolster.qci"
+$include "VehicleDriver-sin.qci"
 $popd
 
 $definevariable Blend_Idle_Default "CombatIdle1_SMG1"

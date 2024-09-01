@@ -19,9 +19,12 @@ $includemodel "humans/female_shared_original.mdl"
 $includemodel "minigun_female_animations.mdl"
 $include "female_shared_DeclareSequence.qci"
 
+$include "VehicleDriver.qci"
+
 $pushd "female_shared_anims"
 $include "CitizenActivityFixes.qci"
 $include "CitizenNewWeaponActivities.qci"
+$include "VehicleDriver-sin.qci"
 $popd
 
 // A quick way of retargeting male animations to the female skeleton.
