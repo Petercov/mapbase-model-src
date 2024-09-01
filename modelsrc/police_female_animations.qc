@@ -23,9 +23,11 @@ $includemodel "minigun_female_animations.mdl"
 $include "police_female_animations_DeclareSequence.qci"
 $include "PoliceActivityFixes.qci"
 $include "PoliceReadinessAnims.qci"
+$include "VehicleDriver.qci"
 
 $pushd "female_shared_anims"
 $include "DefaultHolster.qci"
+$include "VehicleDriver-sin.qci"
 $popd
 
 // ================================================================

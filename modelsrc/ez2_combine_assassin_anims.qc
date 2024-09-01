@@ -40,8 +40,14 @@ $include "CombineAssassinReadinessAnims.qci"
 
 $include "ez2_combine_assassin_anims_shared.qci"
 
+$include "VehicleDriver.qci"
+
 $pushd "male_shared_anims"
 $include "DefaultHolster.qci"
+$popd
+
+$pushd "female_shared_anims"
+$include "VehicleDriver-sin.qci"
 $popd
 
 $definevariable Blend_Idle_Default "CombatIdle1_SMG1"
